@@ -15,7 +15,7 @@ import "very_long_import_very_long_import_very" assert {
 		"type": /****/ "json",
 		"type2" /****/ : "json",
 		/****/
-		"type4" /* dangling 1 */: /* danling 2 */ // line
+		"type4" /* dangling 1 */: /* dangling 2 */ // line
 			"json",
 		/****/
 		"typetypetypetypetypetypetypetypetypetypetype": /****/ "typetypetypetypetypetypetypetypetypetypetypetypetypetype",
