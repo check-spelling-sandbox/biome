@@ -356,7 +356,7 @@ fn get_length_node(node: &AnyJsExpression) -> Option<AnyJsExpression> {
     node.object().ok()
 }
 
-/// AnyJsExpressiion -> Some(i64) if the expression is an integer literal, otherwise None.
+/// AnyJsExpression -> Some(i64) if the expression is an integer literal, otherwise None.
 fn get_integer_from_literal(node: &AnyJsExpression) -> Option<i64> {
     if let AnyJsExpression::JsUnaryExpression(unary) = node {
         let token = unary.operator_token().ok()?;

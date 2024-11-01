@@ -2199,7 +2199,7 @@ struct DeleteExpressionRewriter {
     exited_ident_expr: Option<TextRange>,
     /// Set to true immediately after the rewriter exits a private name
     exited_private_name: bool,
-    /// Set to true immediately after the rewriter exits a member expresison with a private name
+    /// Set to true immediately after the rewriter exits a member expression with a private name
     exited_private_member_expr: Option<TextRange>,
 }
 
