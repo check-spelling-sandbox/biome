@@ -470,7 +470,7 @@ fn assert_lint(
     Ok(())
 }
 
-/// Parse the documentation fragment for a lint rule (in markdown) and lint the code blcoks.
+/// Parse the documentation fragment for a lint rule (in markdown) and lint the code blocks.
 fn parse_documentation(
     group: &'static str,
     rule: &'static str,
