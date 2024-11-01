@@ -330,7 +330,7 @@ impl SemanticEventExtractor {
                         .grand_parent()
                         .is_some_and(|grand_parent| grand_parent.kind() == JS_FUNCTION_BODY)
                     {
-                        // Skip the scope of the function bopdy,
+                        // Skip the scope of the function body,
                         // and set `is_in_strict_mode` on the scope of the function declaration.
                         if let Some(scope) = self.scopes.iter_mut().rev().nth(1) {
                             scope.is_in_strict_mode = true;
