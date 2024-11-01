@@ -12,7 +12,7 @@ directive @example on
 
 directive @delegateField(: !) repeatable on OBJECT | INTERFACE
 
-directve @example on
+directive @example on
 
 directive @example on
   | #

@@ -18,7 +18,7 @@ directive @example on
 
 directive @delegateField(: !) repeatable on OBJECT | INTERFACE
 
-directve @example on
+directive @example on
 
 directive @example on
   | #
@@ -157,7 +157,7 @@ GraphqlRoot {
                         },
                         GraphqlBogus {
                             items: [
-                                IDENT@264..275 "directve" [Newline("\n"), Newline("\n")] [Whitespace(" ")],
+                                IDENT@264..275 "directive" [Newline("\n"), Newline("\n")] [Whitespace(" ")],
                                 AT@275..276 "@" [] [],
                                 IDENT@276..284 "example" [] [Whitespace(" ")],
                                 ON_KW@284..286 "on" [] [],
@@ -296,7 +296,7 @@ GraphqlRoot {
         2: GRAPHQL_DIRECTIVE_LOCATION@255..264
           0: UPPER_INTERFACE_KW@255..264 "INTERFACE" [] []
         3: GRAPHQL_BOGUS@264..286
-          0: IDENT@264..275 "directve" [Newline("\n"), Newline("\n")] [Whitespace(" ")]
+          0: IDENT@264..275 "directive" [Newline("\n"), Newline("\n")] [Whitespace(" ")]
           1: AT@275..276 "@" [] []
           2: IDENT@276..284 "example" [] [Whitespace(" ")]
           3: ON_KW@284..286 "on" [] []
@@ -412,7 +412,7 @@ directive_definition.graphql:13:1 parse ━━━━━━━━━━━━━�
   > 13 │ directive @delegateField(: !) repeatable on OBJECT | INTERFACE
        │ ^^^^^^^^^
     14 │ 
-    15 │ directve @example on
+    15 │ directive @example on
   
   i Must be one of:
   
@@ -445,7 +445,7 @@ directive_definition.graphql:13:26 parse ━━━━━━━━━━━━━
   > 13 │ directive @delegateField(: !) repeatable on OBJECT | INTERFACE
        │                          ^
     14 │ 
-    15 │ directve @example on
+    15 │ directive @example on
   
   i Expected a name here.
   
@@ -454,7 +454,7 @@ directive_definition.graphql:13:26 parse ━━━━━━━━━━━━━
   > 13 │ directive @delegateField(: !) repeatable on OBJECT | INTERFACE
        │                          ^
     14 │ 
-    15 │ directve @example on
+    15 │ directive @example on
   
 directive_definition.graphql:13:29 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -465,7 +465,7 @@ directive_definition.graphql:13:29 parse ━━━━━━━━━━━━━
   > 13 │ directive @delegateField(: !) repeatable on OBJECT | INTERFACE
        │                             ^
     14 │ 
-    15 │ directve @example on
+    15 │ directive @example on
   
   i Expected a named type, or a list type here.
   
@@ -474,20 +474,20 @@ directive_definition.graphql:13:29 parse ━━━━━━━━━━━━━
   > 13 │ directive @delegateField(: !) repeatable on OBJECT | INTERFACE
        │                             ^
     14 │ 
-    15 │ directve @example on
+    15 │ directive @example on
   
 directive_definition.graphql:15:1 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × expected `|` but instead found `directve`
+  × expected `|` but instead found `directive`
   
     13 │ directive @delegateField(: !) repeatable on OBJECT | INTERFACE
     14 │ 
-  > 15 │ directve @example on
+  > 15 │ directive @example on
        │ ^^^^^^^^
     16 │ 
     17 │ directive @example on
   
-  i Remove directve
+  i Remove directive
   
 directive_definition.graphql:19:5 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

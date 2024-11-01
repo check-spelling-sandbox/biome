@@ -90,13 +90,13 @@ impl Rule for UseStrictMode {
             PreferredQuote::Single => "'use strict'",
         };
         let value = JsSyntaxToken::new_detached(JsSyntaxKind::JSX_STRING_LITERAL, value, [], []);
-        let use_strict_diretcive = make::js_directive(value)
+        let use_strict_directive = make::js_directive(value)
             .with_semicolon_token(make::token(T![;]))
             .build();
         let directives = make::js_directive_list(
             node.directives()
                 .into_iter()
-                .chain([use_strict_diretcive])
+                .chain([use_strict_directive])
                 .collect::<Vec<_>>(),
         );
         let new_node = node.clone().with_directives(directives);

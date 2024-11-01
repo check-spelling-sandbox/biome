@@ -257,7 +257,7 @@ impl<'token> LiteralStringNormaliser<'token> {
     }
 
     fn normalise_directive(&mut self, string_information: &StringInformation) -> Cow<'token, str> {
-        // In diretcives, unnecessary escapes should be preserved.
+        // In directives, unnecessary escapes should be preserved.
         // See https://github.com/prettier/prettier/issues/1555
         // Thus we don't normalise the string.
         //

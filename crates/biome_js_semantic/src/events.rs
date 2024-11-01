@@ -321,7 +321,7 @@ impl SemanticEventExtractor {
             JS_DIRECTIVE => {
                 if JsDirective::unwrap_cast(node.clone())
                     .inner_string_text()
-                    .is_ok_and(|diretcive| diretcive == "use strict")
+                    .is_ok_and(|directive| directive == "use strict")
                 {
                     if let Some(scope) = self.scopes.last_mut() {
                         scope.is_in_strict_mode = true;
