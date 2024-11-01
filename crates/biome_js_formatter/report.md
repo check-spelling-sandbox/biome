@@ -7752,7 +7752,7 @@
 **Prettier Similarity**: 100.00%
 
 
-### typescript/conformance/types/constructorType/cunstructorType.ts
+### typescript/conformance/types/constructorType/constructorType.ts
 
 **Prettier Similarity**: 100.00%
 
