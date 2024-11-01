@@ -481,10 +481,10 @@ pub(super) fn parse_conditional_expr(p: &mut JsParser, context: ExpressionContex
 // test js arrow_expr_in_alternate
 // a ? (b) : a => {};
 
-// test ts ts_arrow_exrp_in_alternate
+// test ts ts_arrow_expr_in_alternate
 // a ? (b) : a => {};
 
-// test jsx jsx_arrow_exrp_in_alternate
+// test jsx jsx_arrow_expr_in_alternate
 // bar ? (foo) : (<a>{() => {}}</a>);
 fn parse_conditional_expr_consequent(p: &mut JsParser, context: ExpressionContext) -> ParsedSyntax {
     let checkpoint = p.checkpoint();
