@@ -239,7 +239,7 @@ fn migrate_eslint_rule(
                 ));
             }
         }
-        eslint_eslint::Rule::Jsxa11yArioaRoles(conf) => {
+        eslint_eslint::Rule::Jsxa11yAriaRoles(conf) => {
             if migrate_eslint_any_rule(rules, &name, conf.severity(), opts, results) {
                 if let eslint_eslint::RuleConf::Option(severity, rule_options) = conf {
                     let group = rules.a11y.get_or_insert_with(Default::default);

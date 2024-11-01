@@ -491,7 +491,7 @@ impl Deserializable for Rules {
                         // Eslint plugin rules with options that we handle
                         "jsx-a11y/aria-role" => {
                             if let Some(conf) = RuleConf::deserialize(&value, name, diagnostics) {
-                                result.insert(Rule::Jsxa11yArioaRoles(conf));
+                                result.insert(Rule::Jsxa11yAriaRoles(conf));
                             }
                         }
                         "@typescript-eslint/array-type" => {
@@ -587,7 +587,7 @@ pub(crate) enum Rule {
     NoConsole(RuleConf<Box<NoConsoleOptions>>),
     NoRestrictedGlobals(RuleConf<Box<NoRestrictedGlobal>>),
     // Eslint plugins
-    Jsxa11yArioaRoles(RuleConf<Box<eslint_jsxa11y::AriaRoleOptions>>),
+    Jsxa11yAriaRoles(RuleConf<Box<eslint_jsxa11y::AriaRoleOptions>>),
     TypeScriptArrayType(RuleConf<eslint_typescript::ArrayTypeOptions>),
     TypeScriptExplicitMemberAccessibility(
         RuleConf<eslint_typescript::ExplicitMemberAccessibilityOptions>,
@@ -602,7 +602,7 @@ impl Rule {
             Rule::Any(name, _) => name.clone(),
             Rule::NoConsole(_) => Cow::Borrowed("no-console"),
             Rule::NoRestrictedGlobals(_) => Cow::Borrowed("no-restricted-globals"),
-            Rule::Jsxa11yArioaRoles(_) => Cow::Borrowed("jsx-a11y/aria-role"),
+            Rule::Jsxa11yAriaRoles(_) => Cow::Borrowed("jsx-a11y/aria-role"),
             Rule::TypeScriptArrayType(_) => Cow::Borrowed("@typescript-eslint/array-type"),
             Rule::TypeScriptExplicitMemberAccessibility(_) => {
                 Cow::Borrowed("@typescript-eslint/explicit-member-accessibility")

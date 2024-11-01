@@ -1,4 +1,4 @@
-//! Generate ARAI metadata from `./aria-data.json`
+//! Generate ARIA metadata from `./aria-data.json`
 
 use biome_string_case::Case;
 use proc_macro2::{Ident, Literal, Span, TokenStream};
