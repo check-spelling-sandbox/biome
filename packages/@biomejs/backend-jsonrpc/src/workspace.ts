@@ -80,7 +80,7 @@ export interface PartialConfiguration {
 	/**
 	 * Specific configuration for the JavaScript language
 	 */
-	javascript?: PartialJavascriptConfiguration;
+	javascript?: PartialJavaScriptConfiguration;
 	/**
 	 * Specific configuration for the Json language
 	 */
@@ -226,15 +226,15 @@ export interface PartialGraphqlConfiguration {
 /**
  * A set of options applied to the JavaScript files
  */
-export interface PartialJavascriptConfiguration {
+export interface PartialJavaScriptConfiguration {
 	/**
 	 * Assists options
 	 */
-	assists?: PartialJavascriptAssists;
+	assists?: PartialJavaScriptAssists;
 	/**
 	 * Formatting options
 	 */
-	formatter?: PartialJavascriptFormatter;
+	formatter?: PartialJavaScriptFormatter;
 	/**
 	* A list of global bindings that should be ignored by the analyzers
 
@@ -248,12 +248,12 @@ If defined here, they should not emit diagnostics.
 	/**
 	 * Linter options
 	 */
-	linter?: PartialJavascriptLinter;
-	organizeImports?: PartialJavascriptOrganizeImports;
+	linter?: PartialJavaScriptLinter;
+	organizeImports?: PartialJavaScriptOrganizeImports;
 	/**
 	 * Parsing options
 	 */
-	parser?: PartialJavascriptParser;
+	parser?: PartialJavaScriptParser;
 }
 /**
  * Options applied to JSON files
@@ -455,7 +455,7 @@ export interface PartialGraphqlLinter {
 /**
  * Linter options specific to the JavaScript linter
  */
-export interface PartialJavascriptAssists {
+export interface PartialJavaScriptAssists {
 	/**
 	 * Control the linter for JavaScript (and its super languages) files.
 	 */
@@ -464,7 +464,7 @@ export interface PartialJavascriptAssists {
 /**
  * Formatting options specific to the JavaScript files
  */
-export interface PartialJavascriptFormatter {
+export interface PartialJavaScriptFormatter {
 	/**
 	 * Whether to add non-necessary parentheses to arrow functions. Defaults to "always".
 	 */
@@ -537,17 +537,17 @@ export type JsxRuntime = "transparent" | "reactClassic";
 /**
  * Linter options specific to the JavaScript linter
  */
-export interface PartialJavascriptLinter {
+export interface PartialJavaScriptLinter {
 	/**
 	 * Control the linter for JavaScript (and its super languages) files.
 	 */
 	enabled?: boolean;
 }
-export interface PartialJavascriptOrganizeImports {}
+export interface PartialJavaScriptOrganizeImports {}
 /**
  * Options that changes how the JavaScript parser behaves
  */
-export interface PartialJavascriptParser {
+export interface PartialJavaScriptParser {
 	/**
 	 * Enables parsing of Grit metavariables. Defaults to `false`.
 	 */
@@ -662,7 +662,7 @@ export interface OverridePattern {
 	/**
 	 * Specific configuration for the JavaScript language
 	 */
-	javascript?: PartialJavascriptConfiguration;
+	javascript?: PartialJavaScriptConfiguration;
 	/**
 	 * Specific configuration for the Json language
 	 */

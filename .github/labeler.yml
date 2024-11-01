@@ -72,7 +72,7 @@ A-Changelog:
   - any-glob-to-any-file:
     - CHANGELOG.md
 
-L-Javascript:
+L-JavaScript:
 - changed-files:
   - any-glob-to-any-file:
     - crates/biome_js_*/**

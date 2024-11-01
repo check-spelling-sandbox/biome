@@ -22,7 +22,7 @@ use crate::css::CssLinter;
 pub use crate::diagnostics::BiomeDiagnostic;
 pub use crate::diagnostics::CantLoadExtendFile;
 pub use crate::generated::{push_to_analyzer_assists, push_to_analyzer_rules};
-use crate::javascript::JavascriptLinter;
+use crate::javascript::JavaScriptLinter;
 use crate::json::JsonLinter;
 use crate::organize_imports::{partial_organize_imports, OrganizeImports, PartialOrganizeImports};
 use crate::vcs::{partial_vcs_configuration, PartialVcsConfiguration, VcsConfiguration};
@@ -47,8 +47,8 @@ pub use graphql::{
     PartialGraphqlConfiguration, PartialGraphqlFormatter, PartialGraphqlLinter,
 };
 pub use javascript::{
-    partial_javascript_configuration, JavascriptConfiguration, JavascriptFormatter,
-    PartialJavascriptConfiguration, PartialJavascriptFormatter,
+    partial_javascript_configuration, JavaScriptConfiguration, JavaScriptFormatter,
+    PartialJavaScriptConfiguration, PartialJavaScriptFormatter,
 };
 pub use json::{
     partial_json_configuration, JsonConfiguration, JsonFormatter, PartialJsonConfiguration,
@@ -114,7 +114,7 @@ pub struct Configuration {
 
     /// Specific configuration for the JavaScript language
     #[partial(type, bpaf(external(partial_javascript_configuration), optional))]
-    pub javascript: JavascriptConfiguration,
+    pub javascript: JavaScriptConfiguration,
 
     /// Specific configuration for the Json language
     #[partial(type, bpaf(external(partial_json_configuration), optional))]
@@ -170,8 +170,8 @@ impl PartialConfiguration {
                 }),
                 ..Default::default()
             }),
-            javascript: Some(PartialJavascriptConfiguration {
-                formatter: Some(PartialJavascriptFormatter {
+            javascript: Some(PartialJavaScriptConfiguration {
+                formatter: Some(PartialJavaScriptFormatter {
                     quote_style: Some(QuoteStyle::Double),
                     ..Default::default()
                 }),
@@ -192,7 +192,7 @@ impl PartialConfiguration {
             .unwrap_or_default()
     }
 
-    pub fn get_javascript_formatter_configuration(&self) -> JavascriptFormatter {
+    pub fn get_javascript_formatter_configuration(&self) -> JavaScriptFormatter {
         self.javascript
             .as_ref()
             .map(|f| {
@@ -204,7 +204,7 @@ impl PartialConfiguration {
             .unwrap_or_default()
     }
 
-    pub fn get_javascript_linter_configuration(&self) -> JavascriptLinter {
+    pub fn get_javascript_linter_configuration(&self) -> JavaScriptLinter {
         self.javascript
             .as_ref()
             .map(|f| {

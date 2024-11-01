@@ -5,7 +5,7 @@ use crate::{CliDiagnostic, Execution, TraversalMode};
 use biome_configuration::vcs::PartialVcsConfiguration;
 use biome_configuration::{
     PartialConfiguration, PartialCssFormatter, PartialFilesConfiguration,
-    PartialFormatterConfiguration, PartialGraphqlFormatter, PartialJavascriptFormatter,
+    PartialFormatterConfiguration, PartialGraphqlFormatter, PartialJavaScriptFormatter,
     PartialJsonFormatter,
 };
 use biome_console::{markup, Console, ConsoleExt};
@@ -17,7 +17,7 @@ use biome_service::{DynRef, Workspace, WorkspaceError};
 use std::ffi::OsString;
 
 pub(crate) struct FormatCommandPayload {
-    pub(crate) javascript_formatter: Option<PartialJavascriptFormatter>,
+    pub(crate) javascript_formatter: Option<PartialJavaScriptFormatter>,
     pub(crate) json_formatter: Option<PartialJsonFormatter>,
     pub(crate) css_formatter: Option<PartialCssFormatter>,
     pub(crate) graphql_formatter: Option<PartialGraphqlFormatter>,

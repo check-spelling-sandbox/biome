@@ -1,4 +1,4 @@
-use super::javascript::PartialJavascriptConfiguration;
+use super::javascript::PartialJavaScriptConfiguration;
 use super::json::PartialJsonConfiguration;
 use super::{PartialCssConfiguration, PartialGraphqlConfiguration};
 use crate::{
@@ -50,7 +50,7 @@ pub struct OverridePattern {
     /// Specific configuration for the JavaScript language
     #[serde(skip_serializing_if = "Option::is_none")]
     #[bpaf(external(partial_javascript_configuration), optional, hide)]
-    pub javascript: Option<PartialJavascriptConfiguration>,
+    pub javascript: Option<PartialJavaScriptConfiguration>,
 
     /// Specific configuration for the Json language
     #[serde(skip_serializing_if = "Option::is_none")]

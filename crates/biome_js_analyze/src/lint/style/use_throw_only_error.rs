@@ -82,7 +82,7 @@ impl Rule for UseThrowOnlyError {
                 "Throwing non-"<Emphasis>"Error"</Emphasis>" values is not allowed."
             },
         ).note(markup! {
-            "While Javascript supports throwing any value, handling non-"<Emphasis>"Error"</Emphasis>" values is confusing."
+            "While JavaScript supports throwing any value, handling non-"<Emphasis>"Error"</Emphasis>" values is confusing."
         }))
     }
 }

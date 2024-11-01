@@ -63,7 +63,7 @@ impl eslint_eslint::FlatConfigData {
                     let mut override_pat = biome_config::OverridePattern::default();
                     if let Some(language_options) = flat_config_object.language_options {
                         let globals = language_options.globals.enabled().collect::<StringSet>();
-                        let js_config = biome_config::PartialJavascriptConfiguration {
+                        let js_config = biome_config::PartialJavaScriptConfiguration {
                             globals: Some(globals),
                             ..Default::default()
                         };
@@ -99,7 +99,7 @@ impl eslint_eslint::FlatConfigData {
         };
         if let Some(language_options) = global_config_object.language_options {
             let globals = language_options.globals.enabled().collect::<StringSet>();
-            let js_config = biome_config::PartialJavascriptConfiguration {
+            let js_config = biome_config::PartialJavaScriptConfiguration {
                 globals: Some(globals),
                 ..Default::default()
             };
@@ -127,7 +127,7 @@ impl eslint_eslint::LegacyConfigData {
         let mut biome_config = biome_config::PartialConfiguration::default();
         if !self.globals.is_empty() {
             let globals = self.globals.enabled().collect::<StringSet>();
-            let js_config = biome_config::PartialJavascriptConfiguration {
+            let js_config = biome_config::PartialJavaScriptConfiguration {
                 globals: Some(globals),
                 ..Default::default()
             };
@@ -151,7 +151,7 @@ impl eslint_eslint::LegacyConfigData {
                 let mut override_pattern = biome_config::OverridePattern::default();
                 if !override_elt.globals.is_empty() {
                     let globals = override_elt.globals.enabled().collect::<StringSet>();
-                    let js_config = biome_config::PartialJavascriptConfiguration {
+                    let js_config = biome_config::PartialJavaScriptConfiguration {
                         globals: Some(globals),
                         ..Default::default()
                     };

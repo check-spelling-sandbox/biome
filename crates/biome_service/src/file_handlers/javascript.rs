@@ -574,7 +574,7 @@ pub(crate) fn code_actions(params: CodeActionsParams) -> PullActionsResult {
                 };
             };
 
-            trace!("Javascript runs the analyzer");
+            trace!("JavaScript runs the analyzer");
             analyze(
                 &tree,
                 filter,

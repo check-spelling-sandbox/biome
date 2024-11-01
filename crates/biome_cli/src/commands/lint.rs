@@ -4,7 +4,7 @@ use crate::commands::{get_files_to_process_with_cli_options, CommandRunner};
 use crate::{CliDiagnostic, Execution, TraversalMode};
 use biome_configuration::analyzer::RuleSelector;
 use biome_configuration::css::PartialCssLinter;
-use biome_configuration::javascript::PartialJavascriptLinter;
+use biome_configuration::javascript::PartialJavaScriptLinter;
 use biome_configuration::json::PartialJsonLinter;
 use biome_configuration::vcs::PartialVcsConfiguration;
 use biome_configuration::{
@@ -35,7 +35,7 @@ pub(crate) struct LintCommandPayload {
     pub(crate) staged: bool,
     pub(crate) changed: bool,
     pub(crate) since: Option<String>,
-    pub(crate) javascript_linter: Option<PartialJavascriptLinter>,
+    pub(crate) javascript_linter: Option<PartialJavaScriptLinter>,
     pub(crate) json_linter: Option<PartialJsonLinter>,
     pub(crate) css_linter: Option<PartialCssLinter>,
     pub(crate) graphql_linter: Option<PartialGraphqlLinter>,

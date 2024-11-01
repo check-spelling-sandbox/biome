@@ -50,7 +50,7 @@
 		"javascript": {
 			"description": "Specific configuration for the JavaScript language",
 			"anyOf": [
-				{ "$ref": "#/definitions/JavascriptConfiguration" },
+				{ "$ref": "#/definitions/JavaScriptConfiguration" },
 				{ "type": "null" }
 			]
 		},
@@ -1524,7 +1524,7 @@
 			]
 		},
 		"IndentWidth": { "type": "integer", "format": "uint8", "minimum": 0.0 },
-		"JavascriptAssists": {
+		"JavaScriptAssists": {
 			"description": "Linter options specific to the JavaScript linter",
 			"type": "object",
 			"properties": {
@@ -1535,21 +1535,21 @@
 			},
 			"additionalProperties": false
 		},
-		"JavascriptConfiguration": {
+		"JavaScriptConfiguration": {
 			"description": "A set of options applied to the JavaScript files",
 			"type": "object",
 			"properties": {
 				"assists": {
 					"description": "Assists options",
 					"anyOf": [
-						{ "$ref": "#/definitions/JavascriptAssists" },
+						{ "$ref": "#/definitions/JavaScriptAssists" },
 						{ "type": "null" }
 					]
 				},
 				"formatter": {
 					"description": "Formatting options",
 					"anyOf": [
-						{ "$ref": "#/definitions/JavascriptFormatter" },
+						{ "$ref": "#/definitions/JavaScriptFormatter" },
 						{ "type": "null" }
 					]
 				},
@@ -1564,27 +1564,27 @@
 				"linter": {
 					"description": "Linter options",
 					"anyOf": [
-						{ "$ref": "#/definitions/JavascriptLinter" },
+						{ "$ref": "#/definitions/JavaScriptLinter" },
 						{ "type": "null" }
 					]
 				},
 				"organizeImports": {
 					"anyOf": [
-						{ "$ref": "#/definitions/JavascriptOrganizeImports" },
+						{ "$ref": "#/definitions/JavaScriptOrganizeImports" },
 						{ "type": "null" }
 					]
 				},
 				"parser": {
 					"description": "Parsing options",
 					"anyOf": [
-						{ "$ref": "#/definitions/JavascriptParser" },
+						{ "$ref": "#/definitions/JavaScriptParser" },
 						{ "type": "null" }
 					]
 				}
 			},
 			"additionalProperties": false
 		},
-		"JavascriptFormatter": {
+		"JavaScriptFormatter": {
 			"description": "Formatting options specific to the JavaScript files",
 			"type": "object",
 			"properties": {
@@ -1673,7 +1673,7 @@
 			},
 			"additionalProperties": false
 		},
-		"JavascriptLinter": {
+		"JavaScriptLinter": {
 			"description": "Linter options specific to the JavaScript linter",
 			"type": "object",
 			"properties": {
@@ -1684,11 +1684,11 @@
 			},
 			"additionalProperties": false
 		},
-		"JavascriptOrganizeImports": {
+		"JavaScriptOrganizeImports": {
 			"type": "object",
 			"additionalProperties": false
 		},
-		"JavascriptParser": {
+		"JavaScriptParser": {
 			"description": "Options that changes how the JavaScript parser behaves",
 			"type": "object",
 			"properties": {
@@ -2636,7 +2636,7 @@
 				"javascript": {
 					"description": "Specific configuration for the JavaScript language",
 					"anyOf": [
-						{ "$ref": "#/definitions/JavascriptConfiguration" },
+						{ "$ref": "#/definitions/JavaScriptConfiguration" },
 						{ "type": "null" }
 					]
 				},

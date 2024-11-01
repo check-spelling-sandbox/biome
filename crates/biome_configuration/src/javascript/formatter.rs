@@ -13,7 +13,7 @@ use serde::{Deserialize, Serialize};
 #[partial(derive(Bpaf, Clone, Deserializable, Eq, Merge, PartialEq))]
 #[partial(cfg_attr(feature = "schema", derive(schemars::JsonSchema)))]
 #[partial(serde(rename_all = "camelCase", default, deny_unknown_fields))]
-pub struct JavascriptFormatter {
+pub struct JavaScriptFormatter {
     /// The type of quotes used in JSX. Defaults to double.
     #[partial(bpaf(long("jsx-quote-style"), argument("double|single"), optional))]
     pub jsx_quote_style: QuoteStyle,
@@ -103,9 +103,9 @@ pub struct JavascriptFormatter {
     pub bracket_spacing: Option<BracketSpacing>,
 }
 
-impl PartialJavascriptFormatter {
-    pub fn get_formatter_configuration(&self) -> JavascriptFormatter {
-        JavascriptFormatter {
+impl PartialJavaScriptFormatter {
+    pub fn get_formatter_configuration(&self) -> JavaScriptFormatter {
+        JavaScriptFormatter {
             enabled: self.enabled.unwrap_or_default(),
             jsx_quote_style: self.jsx_quote_style.unwrap_or_default(),
             quote_properties: self.quote_properties.unwrap_or_default(),
@@ -126,7 +126,7 @@ impl PartialJavascriptFormatter {
     }
 }
 
-impl Default for JavascriptFormatter {
+impl Default for JavaScriptFormatter {
     fn default() -> Self {
         Self {
             enabled: true,

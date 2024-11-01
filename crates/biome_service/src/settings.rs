@@ -7,10 +7,10 @@ use biome_configuration::javascript::JsxRuntime;
 use biome_configuration::organize_imports::OrganizeImports;
 use biome_configuration::{
     push_to_analyzer_rules, BiomeDiagnostic, FilesConfiguration, FormatterConfiguration,
-    JavascriptConfiguration, LinterConfiguration, OverrideAssistsConfiguration,
+    JavaScriptConfiguration, LinterConfiguration, OverrideAssistsConfiguration,
     OverrideFormatterConfiguration, OverrideLinterConfiguration,
     OverrideOrganizeImportsConfiguration, Overrides, PartialConfiguration, PartialCssConfiguration,
-    PartialGraphqlConfiguration, PartialJavascriptConfiguration, PartialJsonConfiguration,
+    PartialGraphqlConfiguration, PartialJavaScriptConfiguration, PartialJsonConfiguration,
 };
 use biome_css_formatter::context::CssFormatOptions;
 use biome_css_parser::CssParserOptions;
@@ -254,7 +254,7 @@ impl Settings {
 
         // javascript settings
         if let Some(javascript) = configuration.javascript {
-            self.languages.javascript = JavascriptConfiguration::from(javascript).into();
+            self.languages.javascript = JavaScriptConfiguration::from(javascript).into();
         }
         // json settings
         if let Some(json) = configuration.json {
@@ -569,8 +569,8 @@ pub struct LanguageListSettings {
     pub grit: LanguageSettings<GritLanguage>,
 }
 
-impl From<JavascriptConfiguration> for LanguageSettings<JsLanguage> {
-    fn from(javascript: JavascriptConfiguration) -> Self {
+impl From<JavaScriptConfiguration> for LanguageSettings<JsLanguage> {
+    fn from(javascript: JavaScriptConfiguration) -> Self {
         let mut language_setting: LanguageSettings<JsLanguage> = LanguageSettings::default();
 
         let formatter = javascript.formatter;
@@ -1612,7 +1612,7 @@ pub fn to_override_settings(
 }
 
 fn to_javascript_language_settings(
-    mut conf: PartialJavascriptConfiguration,
+    mut conf: PartialJavaScriptConfiguration,
     parent_settings: &LanguageSettings<JsLanguage>,
 ) -> LanguageSettings<JsLanguage> {
     let mut language_setting: LanguageSettings<JsLanguage> = LanguageSettings::default();

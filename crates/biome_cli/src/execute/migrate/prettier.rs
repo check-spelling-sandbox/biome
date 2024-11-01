@@ -233,7 +233,7 @@ impl TryFrom<PrettierConfiguration> for biome_configuration::PartialConfiguratio
         } else {
             QuoteStyle::Double
         };
-        let js_formatter = biome_configuration::PartialJavascriptFormatter {
+        let js_formatter = biome_configuration::PartialJavaScriptFormatter {
             indent_width: None,
             line_width: None,
             indent_style: None,
@@ -255,7 +255,7 @@ impl TryFrom<PrettierConfiguration> for biome_configuration::PartialConfiguratio
             jsx_quote_style: Some(jsx_quote_style),
             attribute_position: Some(AttributePosition::default()),
         };
-        let js_config = biome_configuration::PartialJavascriptConfiguration {
+        let js_config = biome_configuration::PartialJavaScriptConfiguration {
             formatter: Some(js_formatter),
             ..Default::default()
         };
@@ -345,7 +345,7 @@ impl TryFrom<Override> for biome_configuration::OverridePattern {
                 QuoteStyle::Double
             }
         });
-        let js_formatter = biome_configuration::PartialJavascriptFormatter {
+        let js_formatter = biome_configuration::PartialJavaScriptFormatter {
             bracket_same_line: options.bracket_line,
             arrow_parentheses: options.arrow_parens.map(|arrow_parens| arrow_parens.into()),
             semicolons,
@@ -357,7 +357,7 @@ impl TryFrom<Override> for biome_configuration::OverridePattern {
             jsx_quote_style,
             ..Default::default()
         };
-        let js_config = biome_configuration::PartialJavascriptConfiguration {
+        let js_config = biome_configuration::PartialJavaScriptConfiguration {
             formatter: Some(js_formatter),
             ..Default::default()
         };

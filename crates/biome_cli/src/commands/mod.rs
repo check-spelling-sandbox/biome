@@ -8,7 +8,7 @@ use crate::{
 };
 use biome_configuration::analyzer::RuleSelector;
 use biome_configuration::css::PartialCssLinter;
-use biome_configuration::javascript::PartialJavascriptLinter;
+use biome_configuration::javascript::PartialJavaScriptLinter;
 use biome_configuration::json::PartialJsonLinter;
 use biome_configuration::{
     css::partial_css_formatter, css::partial_css_linter, graphql::partial_graphql_formatter,
@@ -17,7 +17,7 @@ use biome_configuration::{
     partial_configuration, partial_files_configuration, partial_formatter_configuration,
     partial_linter_configuration, vcs::partial_vcs_configuration, vcs::PartialVcsConfiguration,
     PartialCssFormatter, PartialFilesConfiguration, PartialFormatterConfiguration,
-    PartialGraphqlFormatter, PartialGraphqlLinter, PartialJavascriptFormatter,
+    PartialGraphqlFormatter, PartialGraphqlLinter, PartialJavaScriptFormatter,
     PartialJsonFormatter, PartialLinterConfiguration,
 };
 use biome_configuration::{BiomeDiagnostic, PartialConfiguration};
@@ -217,7 +217,7 @@ pub enum BiomeCommand {
         files_configuration: Option<PartialFilesConfiguration>,
 
         #[bpaf(external(partial_javascript_linter), optional, hide_usage)]
-        javascript_linter: Option<PartialJavascriptLinter>,
+        javascript_linter: Option<PartialJavaScriptLinter>,
 
         #[bpaf(external(partial_json_linter), optional, hide_usage)]
         json_linter: Option<PartialJsonLinter>,
@@ -276,7 +276,7 @@ pub enum BiomeCommand {
         formatter_configuration: Option<PartialFormatterConfiguration>,
 
         #[bpaf(external(partial_javascript_formatter), optional, hide_usage)]
-        javascript_formatter: Option<PartialJavascriptFormatter>,
+        javascript_formatter: Option<PartialJavaScriptFormatter>,
 
         #[bpaf(external(partial_json_formatter), optional, hide_usage)]
         json_formatter: Option<PartialJsonFormatter>,
