@@ -60,7 +60,7 @@ info: css/quotes/quotes.css
     content: '\\';
     content: "\\";
 
-    /* Backslases. */
+    /* Backslashes. */
     content: "\"\\\"\\\\\" '\'\\'\\\'\\\\'";
     content: '\'\\\'\\\\\' "\"\\"\\\"\\\\"';
 
@@ -184,7 +184,7 @@ one 'two' three {}
     content: "\\";
     content: "\\";
 
-    /* Backslases. */
+    /* Backslashes. */
     content: "\"\\\"\\\\\" ''\\'\\'\\\\'";
     content: '\'\\\'\\\\\' ""\\"\\"\\\\"';
 
