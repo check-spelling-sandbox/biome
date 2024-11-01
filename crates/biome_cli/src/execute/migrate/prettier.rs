@@ -464,7 +464,7 @@ fn load_config(
     };
     let path_str = path.to_string_lossy();
     // Heuristic: the Prettier config file is considered a YAML file if:
-    // - desrialization failed
+    // - deserialization failed
     // - there are at least 3 diagnostics
     // - the configuration file has no extension.
     // In this case we skip emitting the diagnostics
