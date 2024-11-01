@@ -158,7 +158,7 @@ impl FormatLiteralStringToken<'_> {
     /// Like this, we reduced the number of escaped quotes.
     fn compute_string_information(&self, chosen_quote: QuoteStyle) -> StringInformation {
         // For anything other than string literals, the token won't have
-        // pre-existing quotes, so we can just immediately, safely use the
+        // preexisting quotes, so we can just immediately, safely use the
         // preferred quote style without having to check the content.
         if !matches!(self.token().kind(), CSS_STRING_LITERAL) {
             return StringInformation {
