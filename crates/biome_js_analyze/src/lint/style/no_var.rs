@@ -55,12 +55,12 @@ impl Rule for NoVar {
     fn run(ctx: &RuleContext<Self>) -> Self::Signals {
         let declaration = ctx.query();
         if declaration.is_var() {
-            let ts_global_declaratio = &declaration
+            let ts_global_declaration = &declaration
                 .syntax()
                 .ancestors()
                 .find_map(TsGlobalDeclaration::cast);
 
-            if ts_global_declaratio.is_some() {
+            if ts_global_declaration.is_some() {
                 return None;
             }
             return Some(());
