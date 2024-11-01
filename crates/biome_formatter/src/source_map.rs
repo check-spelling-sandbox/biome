@@ -379,7 +379,7 @@ struct DeletedRange {
 
 impl DeletedRange {
     fn new(source_range: TextRange, total_length_preceding_deleted_ranges: TextSize) -> Self {
-        debug_assert!(source_range.start() >= total_length_preceding_deleted_ranges, "The total number of deleted bytes ({:?}) can not exceed the offset from the start in the source document ({:?}). This is a bug in the source map implementation.", total_length_preceding_deleted_ranges, source_range.start());
+        debug_assert!(source_range.start() >= total_length_preceding_deleted_ranges, "The total number of deleted bytes ({:?}) cannot exceed the offset from the start in the source document ({:?}). This is a bug in the source map implementation.", total_length_preceding_deleted_ranges, source_range.start());
 
         Self {
             source_range,

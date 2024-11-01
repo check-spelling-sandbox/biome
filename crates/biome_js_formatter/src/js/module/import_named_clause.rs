@@ -33,7 +33,7 @@ impl FormatNodeRule<JsImportNamedClause> for FormatJsImportNamedClause {
         // `standaloneSpecifiers` corresponding our `JsDefaultImportSpecifier` + part of `JsNamespaceImportSpecifier`,
         // `groupedSpecifiers` corresponding our `JsNamedImportSpecifiers`
 
-        //  Here we use an opposite way of thinking, we only thinking about the way that can not break
+        //  Here we use an opposite way of thinking, we only thinking about the way that cannot break
         // That's to say
         // 2. length of `JsNamedImportSpecifiers` at least is one
         // 3. Surrounding of the only `JsNamedImportSpecifiers` should not have any comments

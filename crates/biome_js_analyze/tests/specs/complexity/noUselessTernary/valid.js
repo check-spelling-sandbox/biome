@@ -4,7 +4,7 @@ var a = x === 2 ? true : 'No';
 var a = x === 2 ? 'Yes' : false;
 var a = x === 2 ? 'true' : 'false';
 var a = foo ? foo : bar;
-var value = 'a';var canSet = true;var result = value || (canSet ? 'unset' : 'can not set');
+var value = 'a';var canSet = true;var result = value || (canSet ? 'unset' : 'cannot set');
 var a = foo ? bar : foo;
 foo ? bar : foo;
 var a = f(x ? x : 1);

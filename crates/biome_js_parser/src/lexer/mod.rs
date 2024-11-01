@@ -1174,7 +1174,7 @@ impl<'src> JsLexer<'src> {
                 Some(b'_') => {
                     if leading_zero {
                         self.push_diagnostic(ParseDiagnostic::new(
-                            "numeric separator can not be used after leading 0",
+                            "numeric separator cannot be used after leading 0",
                             self.position..self.position,
                         ));
                     }

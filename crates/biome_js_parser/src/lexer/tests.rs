@@ -820,7 +820,7 @@ fn number_basic_err() {
 fn number_leading_zero_err() {
     assert_lex! {
         r#"0_0"#,
-        JS_NUMBER_LITERAL:3 // error: numeric separator can not be used after leading 0
+        JS_NUMBER_LITERAL:3 // error: numeric separator cannot be used after leading 0
     }
 
     assert_lex! {

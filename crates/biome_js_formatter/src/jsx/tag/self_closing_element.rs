@@ -24,7 +24,7 @@ impl FormatNodeRule<JsxSelfClosingElement> for FormatJsxSelfClosingElement {
     ) -> FormatResult<()> {
         debug_assert!(
             !f.comments().has_leading_comments(node.syntax()),
-            "JsxSelfClosingElement can not have comments."
+            "JsxSelfClosingElement cannot have comments."
         );
         Ok(())
     }
@@ -36,7 +36,7 @@ impl FormatNodeRule<JsxSelfClosingElement> for FormatJsxSelfClosingElement {
     ) -> FormatResult<()> {
         debug_assert!(
             !f.comments().has_dangling_comments(node.syntax()),
-            "JsxSelfClosingElement can not have comments."
+            "JsxSelfClosingElement cannot have comments."
         );
         Ok(())
     }
@@ -48,7 +48,7 @@ impl FormatNodeRule<JsxSelfClosingElement> for FormatJsxSelfClosingElement {
     ) -> FormatResult<()> {
         debug_assert!(
             !f.comments().has_trailing_comments(node.syntax()),
-            "JsxSelfClosingElement can not have comments."
+            "JsxSelfClosingElement cannot have comments."
         );
         Ok(())
     }

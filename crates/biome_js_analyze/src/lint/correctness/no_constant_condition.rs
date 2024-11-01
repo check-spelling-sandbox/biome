@@ -422,7 +422,7 @@ fn is_logical_identity(node: AnyJsExpression, operator: JsLogicalOperator) -> bo
             if let Ok(node_operator) = node.operator() {
                 // handles `any_js_stmt && false || b`
                 // `false` is an identity element of `&&` but not `||`
-                // so the logical identity of the whole expression can not be defined.
+                // so the logical identity of the whole expression cannot be defined.
                 if operator != node_operator {
                     return false;
                 }

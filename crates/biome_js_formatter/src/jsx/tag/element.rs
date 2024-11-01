@@ -23,7 +23,7 @@ impl FormatNodeRule<JsxElement> for FormatJsxElement {
     fn fmt_leading_comments(&self, node: &JsxElement, f: &mut JsFormatter) -> FormatResult<()> {
         debug_assert!(
             !f.comments().has_leading_comments(node.syntax()),
-            "JsxElement can not have comments."
+            "JsxElement cannot have comments."
         );
         Ok(())
     }
@@ -31,7 +31,7 @@ impl FormatNodeRule<JsxElement> for FormatJsxElement {
     fn fmt_dangling_comments(&self, node: &JsxElement, f: &mut JsFormatter) -> FormatResult<()> {
         debug_assert!(
             !f.comments().has_dangling_comments(node.syntax()),
-            "JsxElement can not have comments."
+            "JsxElement cannot have comments."
         );
         Ok(())
     }
@@ -39,7 +39,7 @@ impl FormatNodeRule<JsxElement> for FormatJsxElement {
     fn fmt_trailing_comments(&self, node: &JsxElement, f: &mut JsFormatter) -> FormatResult<()> {
         debug_assert!(
             !f.comments().has_trailing_comments(node.syntax()),
-            "JsxElement can not have comments."
+            "JsxElement cannot have comments."
         );
         Ok(())
     }

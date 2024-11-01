@@ -189,7 +189,7 @@ literals.js:2:1 parse ━━━━━━━━━━━━━━━━━━━�
   
 literals.js:2:7 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × numeric separator can not be used after leading 0
+  × numeric separator cannot be used after leading 0
   
     1 │ 00, 012, 08, 091, 0789 // parser errors
   > 2 │ 01n, 0_0, 01.2 // lexer errors
