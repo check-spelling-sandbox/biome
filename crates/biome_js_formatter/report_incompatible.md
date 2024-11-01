@@ -959,7 +959,7 @@
 
 ### js/conditional/postfix-ternary-regressions.js
 ```diff
- // concatened string in consequent should be visually distinguishable from alternate
+ // concatenated string in consequent should be visually distinguishable from alternate
  // … or maybe this is okay, because the colon is enough?
  const avatar = has_ordered
    ? "https://marmelab.com/posters/avatar/longer-word-that-breaks-consequent-" +
