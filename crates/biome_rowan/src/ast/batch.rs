@@ -363,7 +363,7 @@ where
 
         // Ordered text mutation list sorted by text range
         let mut text_mutation_list: Vec<(TextRange, Option<String>)> =
-            // SAFETY: this is safe bacause changes from actions can only
+            // SAFETY: this is safe because changes from actions can only
             // overwrite each other, so the total number of the finalized
             // text mutations will only be less.
             Vec::with_capacity(changes.len());

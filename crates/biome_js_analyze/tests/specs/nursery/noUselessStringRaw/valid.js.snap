@@ -20,7 +20,7 @@ valid.js:3:1 lint/nursery/noUselessStringRaw ━━━━━━━━━━━�
   > 3 │ String.raw`a ${x}`;
       │ ^^^^^^^^^^^^^^^^^^
   
-  i Remove the String.raw call beacause it's useless here, String.raw can deal with string which contains escape sequence like \n, \t, \r, \\, \", \'.
+  i Remove the String.raw call because it's useless here, String.raw can deal with string which contains escape sequence like \n, \t, \r, \\, \", \'.
   
 
 ```
