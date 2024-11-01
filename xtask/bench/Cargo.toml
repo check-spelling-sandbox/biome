@@ -76,7 +76,7 @@ name    = "css_formatter"
 harness = false
 name    = "css_analyzer"
 
-# GraphQL benchs
+# GraphQL benches
 [[bench]]
 harness = false
 name    = "graphql_parser"
