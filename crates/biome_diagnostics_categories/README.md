@@ -6,7 +6,7 @@ throughout the Biome codebase
 ## Code Generation
 
 The list of categories is defined in `src/categories.rs` using the
-`define_dategories!` macro, but instead of relying on conventional Rust macro
+`define_categories!` macro, but instead of relying on conventional Rust macro
 expansion this crate instead uses a build script (in `build.rs`) to control how
 the code resulting from the macro is generated.
 
