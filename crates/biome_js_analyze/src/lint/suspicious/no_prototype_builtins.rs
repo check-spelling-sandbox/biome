@@ -155,7 +155,7 @@ impl Rule for NoPrototypeBuiltins {
 
         if member_expr.is_optional_chain()
             || member_syntax.has_comments_direct()
-            || member_syntax.has_comments_descendants()
+            || member_syntax.has_comments_descendents()
         {
             return None;
         }

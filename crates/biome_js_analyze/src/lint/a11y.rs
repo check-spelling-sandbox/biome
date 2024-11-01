@@ -19,7 +19,7 @@ pub mod no_redundant_roles;
 pub mod no_svg_without_title;
 pub mod use_alt_text;
 pub mod use_anchor_content;
-pub mod use_aria_activedescendant_with_tabindex;
+pub mod use_aria_activedescendent_with_tabindex;
 pub mod use_aria_props_for_role;
 pub mod use_button_type;
 pub mod use_focusable_interactive;
@@ -57,7 +57,7 @@ declare_lint_group! {
             self :: no_svg_without_title :: NoSvgWithoutTitle ,
             self :: use_alt_text :: UseAltText ,
             self :: use_anchor_content :: UseAnchorContent ,
-            self :: use_aria_activedescendant_with_tabindex :: UseAriaActivedescendantWithTabindex ,
+            self :: use_aria_activedescendent_with_tabindex :: UseAriaActivedescendentWithTabindex ,
             self :: use_aria_props_for_role :: UseAriaPropsForRole ,
             self :: use_button_type :: UseButtonType ,
             self :: use_focusable_interactive :: UseFocusableInteractive ,

@@ -494,10 +494,10 @@ pub struct A11y {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub use_anchor_content:
         Option<RuleFixConfiguration<biome_js_analyze::options::UseAnchorContent>>,
-    #[doc = "Enforce that tabIndex is assigned to non-interactive HTML elements with aria-activedescendant."]
+    #[doc = "Enforce that tabIndex is assigned to non-interactive HTML elements with aria-activedescendent."]
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub use_aria_activedescendant_with_tabindex: Option<
-        RuleFixConfiguration<biome_js_analyze::options::UseAriaActivedescendantWithTabindex>,
+    pub use_aria_activedescendent_with_tabindex: Option<
+        RuleFixConfiguration<biome_js_analyze::options::UseAriaActivedescendentWithTabindex>,
     >,
     #[doc = "Enforce that elements with ARIA roles must have all required ARIA attributes for that role."]
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -592,7 +592,7 @@ impl A11y {
         "noSvgWithoutTitle",
         "useAltText",
         "useAnchorContent",
-        "useAriaActivedescendantWithTabindex",
+        "useAriaActivedescendentWithTabindex",
         "useAriaPropsForRole",
         "useButtonType",
         "useFocusableInteractive",
@@ -628,7 +628,7 @@ impl A11y {
         "noSvgWithoutTitle",
         "useAltText",
         "useAnchorContent",
-        "useAriaActivedescendantWithTabindex",
+        "useAriaActivedescendentWithTabindex",
         "useAriaPropsForRole",
         "useButtonType",
         "useFocusableInteractive",
@@ -818,7 +818,7 @@ impl A11y {
                 index_set.insert(RuleFilter::Rule(Self::GROUP_NAME, Self::GROUP_RULES[16]));
             }
         }
-        if let Some(rule) = self.use_aria_activedescendant_with_tabindex.as_ref() {
+        if let Some(rule) = self.use_aria_activedescendent_with_tabindex.as_ref() {
             if rule.is_enabled() {
                 index_set.insert(RuleFilter::Rule(Self::GROUP_NAME, Self::GROUP_RULES[17]));
             }
@@ -992,7 +992,7 @@ impl A11y {
                 index_set.insert(RuleFilter::Rule(Self::GROUP_NAME, Self::GROUP_RULES[16]));
             }
         }
-        if let Some(rule) = self.use_aria_activedescendant_with_tabindex.as_ref() {
+        if let Some(rule) = self.use_aria_activedescendent_with_tabindex.as_ref() {
             if rule.is_disabled() {
                 index_set.insert(RuleFilter::Rule(Self::GROUP_NAME, Self::GROUP_RULES[17]));
             }
@@ -1181,8 +1181,8 @@ impl A11y {
                 .use_anchor_content
                 .as_ref()
                 .map(|conf| (conf.level(), conf.get_options())),
-            "useAriaActivedescendantWithTabindex" => self
-                .use_aria_activedescendant_with_tabindex
+            "useAriaActivedescendentWithTabindex" => self
+                .use_aria_activedescendent_with_tabindex
                 .as_ref()
                 .map(|conf| (conf.level(), conf.get_options())),
             "useAriaPropsForRole" => self

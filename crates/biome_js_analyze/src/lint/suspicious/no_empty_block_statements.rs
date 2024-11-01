@@ -81,7 +81,7 @@ impl Rule for NoEmptyBlockStatements {
     fn run(ctx: &RuleContext<Self>) -> Self::Signals {
         let query = ctx.query();
         let is_empty = is_empty(query);
-        let has_comments = query.syntax().has_comments_descendants();
+        let has_comments = query.syntax().has_comments_descendents();
         let is_constructor_with_ts_param_props_or_private =
             is_constructor_with_ts_param_props_or_private(query);
 

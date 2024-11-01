@@ -88,7 +88,7 @@ fn get_irregular_whitespace(node: &AnyCssRule) -> Vec<TextRange> {
             })
     };
 
-    for token in syntax.descendants_tokens(Direction::Next) {
+    for token in syntax.descendents_tokens(Direction::Next) {
         if matches_irregular_whitespace(&token) {
             all_whitespaces_token.push(token.text_range());
         }

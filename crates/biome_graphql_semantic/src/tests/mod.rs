@@ -25,7 +25,7 @@ where
 {
     parse_result
         .syntax()
-        .descendants()
+        .descendents()
         .find_map(|node| node.cast::<T>())
         .unwrap()
 }
@@ -39,7 +39,7 @@ where
 {
     parse_result
         .syntax()
-        .descendants()
+        .descendents()
         .filter(|node| node.text_trimmed() == name)
         .find_map(|node| {
             let parent = node.parent()?;
@@ -54,7 +54,7 @@ where
 {
     parse_result
         .syntax()
-        .descendants()
+        .descendents()
         .filter_map(|node| node.cast::<T>())
         .collect()
 }

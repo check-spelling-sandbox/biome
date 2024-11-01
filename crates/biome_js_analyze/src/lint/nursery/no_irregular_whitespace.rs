@@ -84,7 +84,7 @@ fn get_irregular_whitespace(node: &JsModule) -> Vec<TextRange> {
         trivia.is_whitespace() && !trivia.text().replace(' ', "").is_empty()
     };
 
-    for token in syntax.descendants_tokens(Direction::Next) {
+    for token in syntax.descendents_tokens(Direction::Next) {
         let leading_trivia_pieces = token.leading_trivia().pieces();
         let trailing_trivia_pieces = token.trailing_trivia().pieces();
 

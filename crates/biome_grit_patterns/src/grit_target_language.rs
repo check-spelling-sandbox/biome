@@ -195,9 +195,9 @@ impl GritTargetLanguage {
             let has_errors = parse_result
                 .tree
                 .root_node()
-                .descendants()
-                .map_or(false, |mut descendants| {
-                    descendants.any(|descendant| descendant.kind().is_bogus())
+                .descendents()
+                .map_or(false, |mut descendents| {
+                    descendents.any(|descendent| descendent.kind().is_bogus())
                 });
             if has_errors {
                 continue;

@@ -121,7 +121,7 @@ fn is_valid_aria_props_supported_by_role(role_name: &'static str, aria_attribute
             )
         }
         "biome_aria::roles::ListRole" => {
-            matches!(aria_attribute, "aria-activedescendant")
+            matches!(aria_attribute, "aria-activedescendent")
         }
         "biome_aria::roles::HeadingRole" => matches!(aria_attribute, "aria-level"),
         // This rule is not concerned with the abstract role

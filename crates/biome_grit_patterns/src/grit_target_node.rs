@@ -57,9 +57,9 @@ macro_rules! generate_target_node {
         })+
 
         impl GritTargetLanguageNode {
-            pub fn descendants(&self) -> Option<impl Iterator<Item = Self>> {
+            pub fn descendents(&self) -> Option<impl Iterator<Item = Self>> {
                 match self {
-                    $(Self::$lang(Node(node)) => Some(node.descendants().map(Into::into))),+,
+                    $(Self::$lang(Node(node)) => Some(node.descendents().map(Into::into))),+,
                     _ => None
                 }
             }
@@ -207,9 +207,9 @@ impl<'a> GritTargetNode<'a> {
             })
     }
 
-    pub fn descendants(&'a self) -> Option<impl Iterator<Item = Self>> {
-        self.node.descendants().map(|descendants| {
-            descendants.map(|node| Self {
+    pub fn descendents(&'a self) -> Option<impl Iterator<Item = Self>> {
+        self.node.descendents().map(|descendents| {
+            descendents.map(|node| Self {
                 node,
                 tree: self.tree,
             })

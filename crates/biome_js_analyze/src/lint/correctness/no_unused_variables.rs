@@ -235,7 +235,7 @@ fn suggested_fix_if_unused(binding: &AnyJsIdentifierBinding) -> Option<Suggested
             let binding_name = binding_name_token.text_trimmed();
             let conditional_type = binding.syntax().ancestors().find_map(TsConditionalType::cast)?;
             let last_binding_name_token = conditional_type.extends_type().ok()?.syntax()
-                .descendants()
+                .descendents()
                 .filter_map(TsInferType::cast)
                 .filter_map(|infer_type| infer_type.name().ok()?.ident_token().ok())
                 .filter(|infer_type_name| infer_type_name.text_trimmed() == binding_name)

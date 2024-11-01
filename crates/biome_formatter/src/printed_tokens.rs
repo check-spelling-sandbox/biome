@@ -61,11 +61,11 @@ impl PrintedTokens {
     /// Asserts that all tokens of the passed in node have been tracked
     ///
     /// ## Panics
-    /// If any descendant token of `root` hasn't been tracked
+    /// If any descendent token of `root` hasn't been tracked
     pub fn assert_all_tracked<L: Language>(&self, root: &SyntaxNode<L>) {
         let mut offsets = self.offsets.clone();
 
-        for token in root.descendants_tokens(Direction::Next) {
+        for token in root.descendents_tokens(Direction::Next) {
             if !offsets.shift_remove(&token.text_trimmed_range().start()) {
                 panic!("token has not been seen by the formatter: {token:#?}.\
                         \nUse `format_replaced` if you want to replace a token from the formatted output.\

@@ -36,7 +36,7 @@ where
     Context: CstFormatContext,
 {
     fn fmt(&self, f: &mut Formatter<Context>) -> FormatResult<()> {
-        for element in self.node.descendants_with_tokens(Direction::Next) {
+        for element in self.node.descendents_with_tokens(Direction::Next) {
             match element {
                 SyntaxElement::Token(token) => f.state_mut().track_token(&token),
                 SyntaxElement::Node(node) => {

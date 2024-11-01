@@ -497,7 +497,7 @@ mod test {
             );
             let node = r
                 .syntax()
-                .descendants()
+                .descendents()
                 .filter(|x| x.text_trimmed() == "useRef()")
                 .last()
                 .unwrap();
@@ -512,7 +512,7 @@ mod test {
             );
             let node = r
                 .syntax()
-                .descendants()
+                .descendents()
                 .filter(|x| x.text_trimmed() == "userCredentials()")
                 .last()
                 .unwrap();
@@ -533,7 +533,7 @@ mod test {
         );
         let node = r
             .syntax()
-            .descendants()
+            .descendents()
             .filter(|x| x.text_trimmed() == "ref")
             .last()
             .unwrap();
@@ -563,7 +563,7 @@ mod test {
         );
         let node = r
             .syntax()
-            .descendants()
+            .descendents()
             .filter(|x| x.text_trimmed() == "ref")
             .last()
             .unwrap();

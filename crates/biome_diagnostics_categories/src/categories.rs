@@ -30,7 +30,7 @@ define_categories! {
     "lint/a11y/noSvgWithoutTitle": "https://biomejs.dev/linter/rules/no-svg-without-title",
     "lint/a11y/useAltText": "https://biomejs.dev/linter/rules/use-alt-text",
     "lint/a11y/useAnchorContent": "https://biomejs.dev/linter/rules/use-anchor-content",
-    "lint/a11y/useAriaActivedescendantWithTabindex": "https://biomejs.dev/linter/rules/use-aria-activedescendant-with-tabindex",
+    "lint/a11y/useAriaActivedescendentWithTabindex": "https://biomejs.dev/linter/rules/use-aria-activedescendent-with-tabindex",
     "lint/a11y/useAriaPropsForRole": "https://biomejs.dev/linter/rules/use-aria-props-for-role",
     "lint/a11y/useButtonType": "https://biomejs.dev/linter/rules/use-button-type",
     "lint/a11y/useFocusableInteractive": "https://biomejs.dev/linter/rules/use-focusable-interactive",

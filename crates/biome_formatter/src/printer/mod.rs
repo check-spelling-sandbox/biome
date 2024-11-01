@@ -653,7 +653,7 @@ impl<'a> Printer<'a> {
         self.print_entry(queue, stack, indent_stack, args)
     }
 
-    /// Fully print an element (print the element itself and all its descendants)
+    /// Fully print an element (print the element itself and all its descendents)
     ///
     /// Unlike [print_element], this function ensures the entire element has
     /// been printed when it returns and the queue is back to its original state

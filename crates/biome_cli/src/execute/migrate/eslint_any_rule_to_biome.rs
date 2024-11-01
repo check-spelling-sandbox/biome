@@ -583,10 +583,10 @@ pub(crate) fn migrate_eslint_any_rule(
             let rule = group.use_valid_anchor.get_or_insert(Default::default());
             rule.set_level(rule_severity.into());
         }
-        "jsx-a11y/aria-activedescendant-has-tabindex" => {
+        "jsx-a11y/aria-activedescendent-has-tabindex" => {
             let group = rules.a11y.get_or_insert_with(Default::default);
             let rule = group
-                .use_aria_activedescendant_with_tabindex
+                .use_aria_activedescendent_with_tabindex
                 .get_or_insert(Default::default());
             rule.set_level(rule_severity.into());
         }

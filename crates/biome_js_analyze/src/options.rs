@@ -284,7 +284,7 @@ pub type UseAdjacentOverloadSignatures = < lint :: nursery :: use_adjacent_overl
 pub type UseAltText = <lint::a11y::use_alt_text::UseAltText as biome_analyze::Rule>::Options;
 pub type UseAnchorContent =
     <lint::a11y::use_anchor_content::UseAnchorContent as biome_analyze::Rule>::Options;
-pub type UseAriaActivedescendantWithTabindex = < lint :: a11y :: use_aria_activedescendant_with_tabindex :: UseAriaActivedescendantWithTabindex as biome_analyze :: Rule > :: Options ;
+pub type UseAriaActivedescendentWithTabindex = < lint :: a11y :: use_aria_activedescendent_with_tabindex :: UseAriaActivedescendentWithTabindex as biome_analyze :: Rule > :: Options ;
 pub type UseAriaPropsForRole =
     <lint::a11y::use_aria_props_for_role::UseAriaPropsForRole as biome_analyze::Rule>::Options;
 pub type UseAriaPropsSupportedByRole = < lint :: nursery :: use_aria_props_supported_by_role :: UseAriaPropsSupportedByRole as biome_analyze :: Rule > :: Options ;

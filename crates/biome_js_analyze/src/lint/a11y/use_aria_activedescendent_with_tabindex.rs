@@ -15,19 +15,19 @@ use biome_js_syntax::{
 use biome_rowan::{AstNode, AstNodeList, BatchMutationExt, TriviaPieceKind};
 
 declare_lint_rule! {
-    /// Enforce that `tabIndex` is assigned to non-interactive HTML elements with `aria-activedescendant`.
+    /// Enforce that `tabIndex` is assigned to non-interactive HTML elements with `aria-activedescendent`.
     ///
-    /// `aria-activedescendant` is used to manage to focus within a [composite widget](https://www.w3.org/TR/wai-aria/#composite).
-    /// The element with the attribute `aria-activedescendant` retains the active document focus.
+    /// `aria-activedescendent` is used to manage to focus within a [composite widget](https://www.w3.org/TR/wai-aria/#composite).
+    /// The element with the attribute `aria-activedescendent` retains the active document focus.
     ///
     /// It indicates which of its child elements has a secondary focus by assigning the ID of that
-    /// element to the value of `aria-activedescendant`. This pattern is used to build a widget
+    /// element to the value of `aria-activedescendent`. This pattern is used to build a widget
     /// like a search typeahead select list. The search input box retains document focus
     /// so that the user can type in the input. If the down arrow key is pressed and
     /// a search suggestion is highlighted, the ID of the suggestion element will be applied
-    /// as the value of `aria-activedescendant` on the input element.
+    /// as the value of `aria-activedescendent` on the input element.
     ///
-    /// Because an element with `aria-activedescendant` must be tabbable,
+    /// Because an element with `aria-activedescendent` must be tabbable,
     /// it must either have an inherent tabIndex of zero or declare a tabIndex attribute.
     ///
     /// ## Examples
@@ -35,30 +35,30 @@ declare_lint_rule! {
     /// ### Invalid
     ///
     /// ```jsx,expect_diagnostic
-    /// <div aria-activedescendant={someID} />
+    /// <div aria-activedescendent={someID} />
     /// ```
     ///
     /// ### Valid
     ///
     /// ```jsx
-    /// <div aria-activedescendant={someID} tabIndex={0} />
+    /// <div aria-activedescendent={someID} tabIndex={0} />
     /// ```
     ///
     /// ```jsx
-    /// <input aria-activedescendant={someID} />
+    /// <input aria-activedescendent={someID} />
     /// ```
     ///
-    pub UseAriaActivedescendantWithTabindex {
+    pub UseAriaActivedescendentWithTabindex {
         version: "1.3.0",
-        name: "useAriaActivedescendantWithTabindex",
+        name: "useAriaActivedescendentWithTabindex",
         language: "jsx",
-        sources: &[RuleSource::EslintJsxA11y("aria-activedescendant-has-tabindex")],
+        sources: &[RuleSource::EslintJsxA11y("aria-activedescendent-has-tabindex")],
         recommended: true,
         fix_kind: FixKind::Unsafe,
     }
 }
 
-impl Rule for UseAriaActivedescendantWithTabindex {
+impl Rule for UseAriaActivedescendentWithTabindex {
     type Query = Aria<AnyJsxElement>;
     type State = ();
     type Signals = Option<Self::State>;
@@ -74,7 +74,7 @@ impl Rule for UseAriaActivedescendantWithTabindex {
         if node.is_element()
             && aria_roles.is_not_interactive_element(element_name.text_trimmed(), attributes)
             && node
-                .find_attribute_by_name("aria-activedescendant")
+                .find_attribute_by_name("aria-activedescendent")
                 .is_some()
             && node.find_attribute_by_name("tabIndex").is_none()
         {
@@ -90,10 +90,10 @@ impl Rule for UseAriaActivedescendantWithTabindex {
             RuleDiagnostic::new(
                 rule_category!(),
                 node.range(),
-                "Enforce elements with aria-activedescendant are tabbable."
+                "Enforce elements with aria-activedescendent are tabbable."
             )
             .note(
-                "aria-activedescendant is used to manage focus within a composite widget.\nThe element with the attribute aria-activedescendant retains the active document focus."
+                "aria-activedescendent is used to manage focus within a composite widget.\nThe element with the attribute aria-activedescendent retains the active document focus."
             ).note(
                 "Add the tabIndex attribute to the element with a value greater than or equal to -1."
             ),
@@ -103,9 +103,9 @@ impl Rule for UseAriaActivedescendantWithTabindex {
     fn action(ctx: &RuleContext<Self>, _: &Self::State) -> Option<JsRuleAction> {
         let node = ctx.query();
         let mut mutation = ctx.root().begin();
-        let descendant_attribute = node.find_attribute_by_name("aria-activedescendant")?;
+        let descendent_attribute = node.find_attribute_by_name("aria-activedescendent")?;
 
-        let old_attribute_list = descendant_attribute
+        let old_attribute_list = descendent_attribute
             .syntax()
             .ancestors()
             .find_map(JsxAttributeList::cast)?;

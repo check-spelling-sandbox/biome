@@ -9,7 +9,7 @@ pub mod restricted_regex;
 #[cfg(test)]
 pub mod tests;
 
-/// Verifies that both nodes are equal by checking their descendants (nodes included) kinds
+/// Verifies that both nodes are equal by checking their descendents (nodes included) kinds
 /// and tokens (same kind and inner token text).
 pub(crate) fn is_node_equal(a_node: &JsSyntaxNode, b_node: &JsSyntaxNode) -> bool {
     let a_tree = a_node.preorder_with_tokens(Direction::Next);
@@ -99,7 +99,7 @@ mod test {
 
         let binary_expression = parsed
             .syntax()
-            .descendants()
+            .descendents()
             .find_map(JsBinaryExpression::cast);
 
         let variable = "a";
@@ -122,7 +122,7 @@ mod test {
 
         let binary_expression = parsed
             .syntax()
-            .descendants()
+            .descendents()
             .find_map(JsBinaryExpression::cast);
 
         let variable = "b";
@@ -145,7 +145,7 @@ mod test {
 
         let binary_expression = parsed
             .syntax()
-            .descendants()
+            .descendents()
             .find_map(JsBinaryExpression::cast);
 
         let variable = "c";
@@ -168,7 +168,7 @@ mod test {
 
         let binary_expression = parsed
             .syntax()
-            .descendants()
+            .descendents()
             .find_map(JsBinaryExpression::cast);
 
         let variable = "l";

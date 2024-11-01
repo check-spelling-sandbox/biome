@@ -695,7 +695,7 @@ mod tests {
         assert_eq!(&root.text(), "((a));");
 
         let mut bogus = root
-            .descendants()
+            .descendents()
             .filter(|node| node.kind() == RawLanguageKind::BOGUS);
 
         // `((a))`
@@ -706,7 +706,7 @@ mod tests {
 
         // `a`
         let expression = root
-            .descendants()
+            .descendents()
             .find(|node| node.kind() == RawLanguageKind::LITERAL_EXPRESSION)
             .unwrap();
 

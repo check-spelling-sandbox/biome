@@ -498,7 +498,7 @@ mod tests {
 
         let literal_expression = source
             .syntax()
-            .descendants()
+            .descendents()
             .find_map(|js_statement| js_statement.cast::<AnyJsLiteralExpression>());
 
         assert_eq!(

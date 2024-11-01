@@ -106,7 +106,7 @@ impl SemanticModel {
     ///
     /// let fragment_reference = r
     ///     .syntax()
-    ///     .descendants()
+    ///     .descendents()
     ///     .filter_map(|x| x.cast::<GraphqlNameReference>())
     ///     .find(|x| x.text() == "fragment")
     ///     .unwrap();
@@ -144,7 +144,7 @@ impl SemanticModel {
     ///
     /// let fragment_reference = r
     ///     .syntax()
-    ///     .descendants()
+    ///     .descendents()
     ///     .filter_map(|x| x.cast::<GraphqlVariableReference>())
     ///     .find(|x| x.text() == "$var")
     ///     .unwrap();

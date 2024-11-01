@@ -806,7 +806,7 @@ pub struct Comments<L: Language> {
 }
 
 impl<L: Language> Comments<L> {
-    /// Extracts all the comments from `root` and its descendants nodes.
+    /// Extracts all the comments from `root` and its descendents nodes.
     pub fn from_node<Style>(
         root: &SyntaxNode<L>,
         style: &Style,
@@ -956,7 +956,7 @@ impl<L: Language> Comments<L> {
         use biome_rowan::SyntaxKind;
 
         let checked_nodes = self.data.checked_suppressions.borrow();
-        for node in root.descendants() {
+        for node in root.descendents() {
             if node.kind().is_list() || node.kind().is_root() {
                 continue;
             }
@@ -996,7 +996,7 @@ Node:
                 .root
                 .as_ref()
                 .expect("Expected root for comments with data")
-                .descendants()
+                .descendents()
             {
                 unformatted_comments.extend(self.leading_comments(&node).iter().filter_map(
                     |comment| {
@@ -1068,7 +1068,7 @@ impl<L: Language> std::fmt::Debug for CommentsData<L> {
         let mut comments = Vec::new();
 
         if let Some(root) = &self.root {
-            for node in root.descendants() {
+            for node in root.descendents() {
                 for leading in self.comments.leading(&node.key()) {
                     comments.push(DebugComment::Leading {
                         node: node.clone(),

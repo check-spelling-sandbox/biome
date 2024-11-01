@@ -120,11 +120,11 @@ fn decide_void_type_context(node: &JsSyntaxNode) -> Option<VoidTypeContext> {
         match parent.kind() {
             JsSyntaxKind::TS_UNION_TYPE_VARIANT_LIST => {
                 // checks if the union type contains a generic type has a void type as argument
-                for child in parent.descendants() {
+                for child in parent.descendents() {
                     if child.kind() == JsSyntaxKind::TS_TYPE_ARGUMENT_LIST {
                         let found_void_type = child
-                            .descendants()
-                            .any(|descendant| descendant.kind() == JsSyntaxKind::TS_VOID_TYPE);
+                            .descendents()
+                            .any(|descendent| descendent.kind() == JsSyntaxKind::TS_VOID_TYPE);
                         if found_void_type {
                             return None;
                         }

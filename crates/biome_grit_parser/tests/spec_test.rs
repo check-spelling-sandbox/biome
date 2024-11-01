@@ -94,7 +94,7 @@ pub fn run(test_case: &str, _snapshot_name: &str, test_directory: &str, outcome_
             if missing_required
                 || parsed
                     .syntax()
-                    .descendants()
+                    .descendents()
                     .any(|node| node.kind().is_bogus())
             {
                 panic!("Parsed tree of a 'OK' test case should not contain any missing required children or bogus nodes:\n{formatted_ast}");

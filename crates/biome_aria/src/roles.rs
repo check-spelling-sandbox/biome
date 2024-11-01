@@ -352,7 +352,7 @@ define_role! {
 define_role! {
     /// https://www.w3.org/TR/wai-aria-1.1/#group
     GroupRole {
-        PROPS: [("aria-activedescendant", false)],
+        PROPS: [("aria-activedescendent", false)],
         ROLES: ["row", "select", "toolbar"],
         CONCEPTS: &[("fieldset", &[])],
     }
@@ -361,7 +361,7 @@ define_role! {
 define_role! {
     /// https://www.w3.org/TR/wai-aria-1.1/#img
     ImgRole {
-        PROPS: [("aria-activedescendant", false)],
+        PROPS: [("aria-activedescendent", false)],
         ROLES: ["section"],
         CONCEPTS: &[("img", &[])],
     }
@@ -532,7 +532,7 @@ define_role! {
     /// https://www.w3.org/TR/wai-aria-1.1/#searchbox
     SearchboxRole {
         PROPS: [
-            ("aria-activedescendant", false),
+            ("aria-activedescendent", false),
             ("aria-autocomplete", false),
             ("aria-multiline", false),
             ("aria-placeholder", false),
@@ -590,7 +590,7 @@ define_role! {
     /// https://www.w3.org/TR/wai-aria-1.1/#textbox
     TextboxRole {
         PROPS: [
-            ("aria-activedescendant", false),
+            ("aria-activedescendent", false),
             ("aria-autocomplete", false),
             ("aria-multiline", false),
             ("aria-placeholder", false),
@@ -1104,13 +1104,13 @@ impl<'a> AriaRoles {
             "table" => &TableRole as &dyn AriaRoleDefinition,
             "textarea" => &TextboxRole as &dyn AriaRoleDefinition,
             "tr" => &RowRole as &dyn AriaRoleDefinition,
-            // cell if a descendant of a <table> element,
-            // but this crate does not support checking a descendant of an element.
+            // cell if a descendent of a <table> element,
+            // but this crate does not support checking a descendent of an element.
             //
             // ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
             "td" => &CellRole as &dyn AriaRoleDefinition,
             // <th> element is able to be a rowheader, columnheader,
-            // but this crate does not support checking a descendant of an element.
+            // but this crate does not support checking a descendent of an element.
             //
             // ref: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th
             "th" => &RowHeaderRole as &dyn AriaRoleDefinition,
@@ -1184,7 +1184,7 @@ impl<'a> AriaRoles {
             "b" | "bdi" | "bdo" | "body" | "data" | "div" | "hgroup" | "i" | "q" | "samp"
             | "small" | "span" | "u" | "pre" => &GenericRole as &dyn AriaRoleDefinition,
             "header" | "footer" => {
-                // This crate does not support checking a descendant of an element.
+                // This crate does not support checking a descendent of an element.
                 // header (maybe BannerRole): https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/banner.html
                 // footer (maybe ContentInfoRole): https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/contentinfo.html
                 &GenericRole as &dyn AriaRoleDefinition
@@ -1211,7 +1211,7 @@ impl<'a> AriaRoles {
         attributes: Option<FxHashMap<String, Vec<String>>>,
     ) -> bool {
         // <header> elements do not technically have semantics, unless the
-        // element is a direct descendant of <body>, and this crate cannot
+        // element is a direct descendent of <body>, and this crate cannot
         // reliably test that.
         //
         // Check: https://www.w3.org/TR/wai-aria-practices/examples/landmarks/banner.html

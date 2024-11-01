@@ -22,7 +22,7 @@ pub fn assert_rename_binding_a_to_b_ok(before: &str, expected: &str) {
 
     let bindings: Vec<JsIdentifierBinding> = r
         .syntax()
-        .descendants()
+        .descendents()
         .filter_map(JsIdentifierBinding::cast)
         .filter(|x| x.text().contains('a'))
         .collect();
@@ -51,7 +51,7 @@ pub fn assert_rename_ts_binding_a_to_b_ok(before: &str, expected: &str) {
 
     let bindings: Vec<TsIdentifierBinding> = r
         .syntax()
-        .descendants()
+        .descendents()
         .filter_map(TsIdentifierBinding::cast)
         .filter(|x| x.text().contains('a'))
         .collect();
@@ -86,7 +86,7 @@ pub fn assert_rename_binding_a_to_b_nok(before: &str) {
 
     let binding_a = r
         .syntax()
-        .descendants()
+        .descendents()
         .filter_map(|x| x.cast::<JsIdentifierBinding>())
         .find(|x| x.text() == "a")
         .unwrap();
@@ -109,7 +109,7 @@ pub fn assert_remove_identifier_a_ok<Anc: AstNode<Language = JsLanguage> + Debug
 
     let identifiers_a: Vec<JsSyntaxNode> = r
         .syntax()
-        .descendants()
+        .descendents()
         .filter(|x| x.tokens().any(|token| token.text_trimmed() == "a"))
         .collect();
     let node_to_remove = match identifiers_a.as_slice() {
@@ -192,7 +192,7 @@ pub fn ok_find_attributes_by_name() {
     );
     let list = r
         .syntax()
-        .descendants()
+        .descendents()
         .find_map(biome_js_syntax::JsxAttributeList::cast)
         .unwrap();
     let [a, c, d] = list.find_by_names(["a", "c", "d"]);

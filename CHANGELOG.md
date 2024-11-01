@@ -4421,7 +4421,7 @@ The following rules are promoted:
   - [noInteractiveElementToNoninteractiveRole](https://biomejs.dev/linter/rules/no-interactive-element-to-noninteractive-role)
   - [noNoninteractiveElementToInteractiveRole](https://biomejs.dev/linter/rules/no-noninteractive-element-to-interactive-role)
   - [noNoninteractiveTabindex](https://biomejs.dev/linter/rules/no-noninteractive-tabindex)
-  - [useAriaActivedescendantWithTabindex](https://biomejs.dev/linter/rules/use-aria-activedescendant-with-tabindex)
+  - [useAriaActivedescendentWithTabindex](https://biomejs.dev/linter/rules/use-aria-activedescendent-with-tabindex)
 
 - [noMultipleSpacesInRegularExpressionLiterals](https://biomejs.dev/linter/rules/no-multiple-spaces-in-regular-expression-literals/)
   has a safe code fix. Contributed by @Conaclos
@@ -4814,7 +4814,7 @@ The following rules are now deprecated:
 #### Enhancements
 
 - Add an unsafe code fix
-  for [a11y/useAriaActivedescendantWithTabindex](https://biomejs.dev/linter/rules/use-aria-activedescendant-with-tabindex)
+  for [a11y/useAriaActivedescendentWithTabindex](https://biomejs.dev/linter/rules/use-aria-activedescendent-with-tabindex)
 
 #### Bug fixes
 
@@ -5246,8 +5246,8 @@ Add [noInteractiveElementToNoninteractiveRole](https://biomejs.dev/linter/rules/
 rule. The rule enforces the non-interactive ARIA roles are not assigned to interactive HTML elements. Contributed by
 @nissy-dev
 
-- Add [useAriaActivedescendantWithTabindex](https://biomejs.dev/linter/rules/use-aria-activedescendant-with-tabindex)
-  rule. The rule enforces that `tabIndex` is assigned to non-interactive HTML elements with `aria-activedescendant`.
+- Add [useAriaActivedescendentWithTabindex](https://biomejs.dev/linter/rules/use-aria-activedescendent-with-tabindex)
+  rule. The rule enforces that `tabIndex` is assigned to non-interactive HTML elements with `aria-activedescendent`.
   Contributed by @nissy-dev
 
 - Add [noUselessLoneBlockStatements](https://biomejs.dev/linter/rules/no-useless-lone-block-statements) rule.

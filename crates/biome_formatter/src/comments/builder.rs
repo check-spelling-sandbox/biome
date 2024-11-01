@@ -694,7 +694,7 @@ mod tests {
         );
 
         let b = root
-            .descendants()
+            .descendents()
             .find_map(JsShorthandPropertyObjectMember::cast)
             .unwrap();
 
@@ -737,7 +737,7 @@ mod tests {
         );
 
         let a = root
-            .descendants()
+            .descendents()
             .find_map(JsPropertyObjectMember::cast)
             .unwrap();
 
@@ -780,7 +780,7 @@ mod tests {
         );
 
         let a = root
-            .descendants()
+            .descendents()
             .find_map(JsPropertyObjectMember::cast)
             .unwrap();
 
@@ -804,7 +804,7 @@ mod tests {
             JsSyntaxKind::JS_PARAMETERS
         );
 
-        let parameters = root.descendants().find_map(JsParameters::cast).unwrap();
+        let parameters = root.descendents().find_map(JsParameters::cast).unwrap();
         assert!(!comments.dangling(&parameters.syntax().key()).is_empty());
     }
 
@@ -829,7 +829,7 @@ mod tests {
             JsSyntaxKind::JS_PARAMETERS
         );
 
-        let parameters = root.descendants().find_map(JsParameters::cast).unwrap();
+        let parameters = root.descendents().find_map(JsParameters::cast).unwrap();
         assert!(!comments.dangling(&parameters.syntax().key()).is_empty());
     }
 
@@ -863,12 +863,12 @@ b;"#;
         // A lot of code that simply removes the parenthesized expression and moves the parens
         // trivia to the identifiers leading / trailing trivia.
         let parenthesized = root
-            .descendants()
+            .descendents()
             .find_map(JsParenthesizedExpression::cast)
             .unwrap();
 
         let reference_identifier = root
-            .descendants()
+            .descendents()
             .find_map(JsReferenceIdentifier::cast)
             .unwrap();
 
@@ -950,7 +950,7 @@ b;"#;
         );
 
         let unary = transformed
-            .descendants()
+            .descendents()
             .find_map(JsUnaryExpression::cast)
             .unwrap();
         assert!(!comments
@@ -1012,7 +1012,7 @@ b;"#;
         );
 
         let sequence = root
-            .descendants()
+            .descendents()
             .find_map(JsSequenceExpression::cast)
             .unwrap();
 

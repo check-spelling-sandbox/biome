@@ -5,7 +5,7 @@ use std::slice::Iter;
 use std::str::FromStr;
 
 define_property! {
-    AriaActivedescendant {
+    AriaActivedescendent {
         PROPERTY_TYPE: "id",
         VALUES: [],
     }
@@ -345,7 +345,7 @@ pub struct AriaProperties;
 impl AriaProperties {
     pub fn get_property<'a>(&self, property_name: &str) -> Option<&'a dyn AriaPropertyDefinition> {
         Some(match property_name {
-            "aria-activedescendant" => &AriaActivedescendant as &dyn AriaPropertyDefinition,
+            "aria-activedescendent" => &AriaActivedescendent as &dyn AriaPropertyDefinition,
             "aria-autocomplete" => &AriaAutocomplete as &dyn AriaPropertyDefinition,
             "aria-busy" => &AriaBusy as &dyn AriaPropertyDefinition,
             "aria-checked" => &AriaChecked as &dyn AriaPropertyDefinition,
