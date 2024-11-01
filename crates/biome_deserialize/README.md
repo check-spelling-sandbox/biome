@@ -432,7 +432,7 @@ Here we expect a map of key-value pairs.
 Thus, we implement `visit_map` and set the associated constant `EXPECTED_TYPE` to `DeserializableTypes::MAP`.
 We also set the associated type `Output` to the type that we want to produce: `Person`.
 
-The implementation of `Deserialziable` for `Person` simply delegates the deserialization of the visitor.
+The implementation of `Deserializable` for `Person` simply delegates the deserialization of the visitor.
 Internally, the deserialization of `value` calls the `visit_` method that corresponds to its type.
 If the value is a map of key-value pairs, then `visit_map` is called.
 Otherwise, another `visit_` method is called.
