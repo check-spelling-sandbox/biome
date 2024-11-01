@@ -3,20 +3,20 @@ use biome_console::{markup, Console, ConsoleExt};
 use biome_diagnostics::PrintGitHubDiagnostic;
 use std::io;
 
-pub(crate) struct GithubReporter {
+pub(crate) struct GitHubReporter {
     pub(crate) diagnostics_payload: DiagnosticsPayload,
     pub(crate) execution: Execution,
 }
 
-impl Reporter for GithubReporter {
+impl Reporter for GitHubReporter {
     fn write(self, visitor: &mut dyn ReporterVisitor) -> io::Result<()> {
         visitor.report_diagnostics(&self.execution, self.diagnostics_payload)?;
         Ok(())
     }
 }
-pub(crate) struct GithubReporterVisitor<'a>(pub(crate) &'a mut dyn Console);
+pub(crate) struct GitHubReporterVisitor<'a>(pub(crate) &'a mut dyn Console);
 
-impl<'a> ReporterVisitor for GithubReporterVisitor<'a> {
+impl<'a> ReporterVisitor for GitHubReporterVisitor<'a> {
     fn report_summary(
         &mut self,
         _execution: &Execution,

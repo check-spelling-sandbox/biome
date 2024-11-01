@@ -9,7 +9,7 @@ use crate::commands::MigrateSubCommand;
 use crate::diagnostics::ReportDiagnostic;
 use crate::execute::migrate::MigratePayload;
 use crate::execute::traverse::{traverse, TraverseResult};
-use crate::reporter::github::{GithubReporter, GithubReporterVisitor};
+use crate::reporter::github::{GitHubReporter, GitHubReporterVisitor};
 use crate::reporter::gitlab::{GitLabReporter, GitLabReporterVisitor};
 use crate::reporter::json::{JsonReporter, JsonReporterVisitor};
 use crate::reporter::junit::{JunitReporter, JunitReporterVisitor};
@@ -536,7 +536,7 @@ pub fn execute_mode(
                 }
             }
             ReportMode::GitHub => {
-                let reporter = GithubReporter {
+                let reporter = GitHubReporter {
                     diagnostics_payload: DiagnosticsPayload {
                         verbose: cli_options.verbose,
                         diagnostic_level: cli_options.diagnostic_level,
@@ -544,7 +544,7 @@ pub fn execute_mode(
                     },
                     execution: execution.clone(),
                 };
-                reporter.write(&mut GithubReporterVisitor(console))?;
+                reporter.write(&mut GitHubReporterVisitor(console))?;
             }
             ReportMode::GitLab => {
                 let reporter = GitLabReporter {
