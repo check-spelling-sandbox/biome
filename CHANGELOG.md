@@ -3822,7 +3822,7 @@ Additionally, the following rules are now recommended:
 
 -
 Fix [#1575](https://github.com/biomejs/biome/issues/1575). [noArrayIndexKey](https://biomejs.dev/linter/rules/no-array-index-key/)
-now captures array index value inside template literals and with string concatination. Contributed by @vasucp1207
+now captures array index value inside template literals and with string concatenation. Contributed by @vasucp1207
 
 - Linter rules that inspect regexes now handle multibyte characters
   correctly ([#1522](https://github.com/biomejs/biome/issues/1522)).
