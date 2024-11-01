@@ -1049,7 +1049,7 @@ impl Format<JsFormatContext> for AnyJsAssignmentLike {
             // We create a temporary buffer because the left hand side has to conditionally add
             // a group based on the layout, but the layout can only be computed by knowing the
             // width of the left hand side. The left hand side can be a member, and that has a width
-            // can can be known only when it's formatted (it can incur in some transformation,
+            // that can be known only when it's formatted (it can incur in some transformation,
             // like removing some escapes, etc.).
             //
             // 1. we crate a temporary buffer
