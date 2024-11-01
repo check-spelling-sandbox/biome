@@ -77,7 +77,7 @@ markup! {
                 let ident_expr =
                     make::js_identifier_expression(make::js_reference_identifier(undefine_indent));
                 // Why we need to use `final_array_element_list.iter().nth(i)` instead of `item`, because every time we
-                // call `replace_node` the previous iteration `item` is not the descent child of current `final_array_element_list` any more.
+                // call `replace_node` the previous iteration `item` is not the descent child of current `final_array_element_list` anymore.
                 let n_element = final_array_element_list.iter().nth(i)?.ok()?;
                 final_array_element_list = final_array_element_list.replace_node(
                     n_element,
