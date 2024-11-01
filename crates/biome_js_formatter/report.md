@@ -7817,7 +7817,7 @@
 **Prettier Similarity**: 100.00%
 
 
-### typescript/conformance/types/indexedAccesType/indexedAccesType.ts
+### typescript/conformance/types/indexedAccessType/indexedAccessType.ts
 
 **Prettier Similarity**: 100.00%
 
