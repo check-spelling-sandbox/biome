@@ -7,8 +7,8 @@ info: js/module/string/quoteSingle/directives.js
 ```js
 'use preferred quote';
 "use preferred quote";
-"keep quotes and escpaes \" ";
-'keep quotes and escpaes \' ';
+"keep quotes and escapes \" ";
+'keep quotes and escapes \' ';
 ```
 
 
@@ -37,8 +37,8 @@ Attribute Position: Auto
 ```js
 "use preferred quote";
 "use preferred quote";
-"keep quotes and escpaes \" ";
-'keep quotes and escpaes \' ';
+"keep quotes and escapes \" ";
+'keep quotes and escapes \' ';
 ```
 
 ## Output 1
@@ -62,6 +62,6 @@ Attribute Position: Auto
 ```js
 'use preferred quote';
 'use preferred quote';
-"keep quotes and escpaes \" ";
-'keep quotes and escpaes \' ';
+"keep quotes and escapes \" ";
+'keep quotes and escapes \' ';
 ```

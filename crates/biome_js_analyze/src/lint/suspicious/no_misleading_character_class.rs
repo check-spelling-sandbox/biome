@@ -319,7 +319,7 @@ fn diagnostic_regex_class(
     let mut iter = char_class.char_indices();
     while let Some((i, c)) = iter.next() {
         let (codepoint, end) = if c == '\\' {
-            // Maybe  unicode esccapes \u{XXX} \uXXXX
+            // Maybe  unicode escapes \u{XXX} \uXXXX
             let Some((codepoint, len)) = decode_next_codepoint(&char_class[i..], is_in_string)
             else {
                 prev_char_index = i;
