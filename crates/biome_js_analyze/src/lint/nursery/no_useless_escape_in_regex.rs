@@ -72,7 +72,7 @@ impl Rule for NoUselessEscapeInRegex {
                     match escaped {
                         b'\\'
                         | b'/'
-                        // Anchrors
+                        // Anchors
                         | b'^' | b'$'
                         // chartacaters sets
                         | b'.' | b'd' | b'D' | b'w' | b'W' | b's' | b'S' |
