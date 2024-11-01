@@ -1403,7 +1403,7 @@ async fn pull_diagnostics_for_css_files() -> Result<()> {
 
     server.load_configuration().await?;
 
-    let incorrect_config = r#"a {colr: blue;}"#;
+    let incorrect_config = r#"a {color_: blue;}"#;
     server
         .open_named_document(incorrect_config, url!("document.css"), "css")
         .await?;

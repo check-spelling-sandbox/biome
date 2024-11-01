@@ -5,7 +5,7 @@ expression: invalid.css
 # Input
 ```css
 a {
-  colr: blue;
+  color_: blue;
 }
 
 a {
@@ -19,17 +19,17 @@ a {
 invalid.css:2:3 lint/correctness/noUnknownProperty ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ! Unknown property is not allowed.
-  
+
     1 │ a {
-  > 2 │   colr: blue;
-      │   ^^^^
+  > 2 │   color_: blue;
+      │   ^^^^^^
     3 │ }
-    4 │ 
-  
+    4 │
+
   i See CSS Specifications and browser specific properties for more details.
-  
+
   i To resolve this issue, replace the unknown property with a valid CSS property.
-  
+
 
 ```
 
@@ -37,16 +37,16 @@ invalid.css:2:3 lint/correctness/noUnknownProperty ━━━━━━━━━�
 invalid.css:6:3 lint/correctness/noUnknownProperty ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ! Unknown property is not allowed.
-  
+
     5 │ a {
   > 6 │   my-property: 1;
       │   ^^^^^^^^^^^
     7 │ }
-    8 │ 
-  
+    8 │
+
   i See CSS Specifications and browser specific properties for more details.
-  
+
   i To resolve this issue, replace the unknown property with a valid CSS property.
-  
+
 
 ```

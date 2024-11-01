@@ -26,7 +26,7 @@ declare_lint_rule! {
     ///
     /// ```css,expect_diagnostic
     /// a {
-    ///   colr: blue;
+    ///   color_: blue;
     /// }
     /// ```
     ///
