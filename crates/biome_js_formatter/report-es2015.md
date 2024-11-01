@@ -4180,7 +4180,7 @@
 **Prettier Similarity**: 100.00%
 
 
-### js/template-literals/binary-exporessions.js
+### js/template-literals/binary-expressions.js
 
 **Prettier Similarity**: 100.00%
 
