@@ -11,7 +11,7 @@ fn migrate_eslintrcjson() {
     let biomejson = r#"{ "linter": { "enabled": true } }"#;
     let eslintrc = r#"{
         "ignorePatterns": [
-            "**/*.test.js", // trailing comma amd comment
+            "**/*.test.js", // trailing comma and comment
         ],
         "globals": {
             "var1": "writable",
