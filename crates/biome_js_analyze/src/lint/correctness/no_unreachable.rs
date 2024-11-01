@@ -201,7 +201,7 @@ impl Rule for NoUnreachable {
     }
 }
 
-/// Any function with a complexity score higher than this value will use the
+/// Any function with a complexity score greater than this value will use the
 /// simple reachability analysis instead of the fine analysis
 const COMPLEXITY_THRESHOLD: u32 = 20;
 

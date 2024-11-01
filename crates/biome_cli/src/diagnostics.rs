@@ -40,7 +40,7 @@ pub enum CliDiagnostic {
     ///
     /// This happens when these diagnostics come from rules that don't have a code action.
     FileCheck(FileCheck),
-    /// When an argument is higher than the expected maximum
+    /// When an argument is greater than the expected maximum
     OverflowNumberArgument(OverflowNumberArgument),
     /// Wrapper for an underlying `biome_service` error
     WorkspaceError(WorkspaceError),
