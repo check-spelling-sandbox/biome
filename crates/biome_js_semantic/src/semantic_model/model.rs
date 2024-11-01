@@ -47,7 +47,7 @@ impl ScopeId {
         // SAFETY: We didn't handle files execedding `u32::MAX` bytes.
         // Thus, it isn't possible to execedd `u32::MAX` scopes.
         //
-        // Adding 1 ensurtes that the value is never equal to 0.
+        // Adding 1 ensures that the value is never equal to 0.
         // Instead of adding 1, we could XOR the value with `u32::MAX`.
         // This is what the [nonmax](https://docs.rs/nonmax/latest/nonmax/) crate does.
         // However, this doesn't preserve the order.
