@@ -1584,15 +1584,15 @@ pub enum Kind {
     ObjectLiteralSetter,
     ObjectLiteralMethod,
     TypeAlias,
-    /// All members defined in type alaises and interfaces
+    /// All members defined in type aliases and interfaces
     TypeMember,
-    /// All getters defined in type alaises and interfaces
+    /// All getters defined in type aliases and interfaces
     TypeGetter,
-    /// All properties defined in type alaises and interfaces
+    /// All properties defined in type aliases and interfaces
     TypeProperty,
-    /// All setters defined in type alaises and interfaces
+    /// All setters defined in type aliases and interfaces
     TypeSetter,
-    /// All methods defined in type alaises and interfaces
+    /// All methods defined in type aliases and interfaces
     TypeMethod,
 }
 

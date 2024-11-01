@@ -1895,27 +1895,27 @@
 					"enum": ["objectLiteralMember"]
 				},
 				{
-					"description": "All members defined in type alaises and interfaces",
+					"description": "All members defined in type aliases and interfaces",
 					"type": "string",
 					"enum": ["typeMember"]
 				},
 				{
-					"description": "All getters defined in type alaises and interfaces",
+					"description": "All getters defined in type aliases and interfaces",
 					"type": "string",
 					"enum": ["typeGetter"]
 				},
 				{
-					"description": "All properties defined in type alaises and interfaces",
+					"description": "All properties defined in type aliases and interfaces",
 					"type": "string",
 					"enum": ["typeProperty"]
 				},
 				{
-					"description": "All setters defined in type alaises and interfaces",
+					"description": "All setters defined in type aliases and interfaces",
 					"type": "string",
 					"enum": ["typeSetter"]
 				},
 				{
-					"description": "All methods defined in type alaises and interfaces",
+					"description": "All methods defined in type aliases and interfaces",
 					"type": "string",
 					"enum": ["typeMethod"]
 				}
