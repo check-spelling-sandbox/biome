@@ -4210,7 +4210,7 @@
 **Prettier Similarity**: 100.00%
 
 
-### js/nullish-coalescing/nullish_coalesing_operator.js
+### js/nullish-coalescing/nullish_coalescing_operator.js
 
 **Prettier Similarity**: 100.00%
 
