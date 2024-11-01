@@ -7237,7 +7237,7 @@
 **Prettier Similarity**: 100.00%
 
 
-### typescript/conditional-types/conditonal-types.ts
+### typescript/conditional-types/conditional-types.ts
 
 **Prettier Similarity**: 100.00%
 
