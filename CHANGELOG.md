@@ -1252,7 +1252,7 @@ The following JavaScript rules are promoted:
 
 - [useNamingConvention](https://biomejs.dev/linter/rules/use-naming-convention/) no longer provides fixes for global TypeScript declaration files.
 
-  Global TypeScript declaration files have no epxorts and no imports.
+  Global TypeScript declaration files have no exports and no imports.
   All the declared types are available in all files of the project.
   Thus, it is not safe to propose renaming only in the declaration file.
 
