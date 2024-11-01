@@ -19,7 +19,7 @@ describe("Biome WebAssembly lintContent", () => {
 	});
 
 	describe("fixFileMode is undefined/omitted", () => {
-		it("should emit diagnotics", () => {
+		it("should emit diagnostics", () => {
 			const result = biome.lintContent(inputCode, {
 				filePath: "example.js",
 			});
@@ -40,7 +40,7 @@ describe("Biome WebAssembly lintContent", () => {
 	});
 
 	describe("fixFileMode is SafeFixes", () => {
-		it("should emit diagnotics", () => {
+		it("should emit diagnostics", () => {
 			const result = biome.lintContent(inputCode, {
 				filePath: "example.js",
 				fixFileMode: "SafeFixes",
@@ -59,7 +59,7 @@ describe("Biome WebAssembly lintContent", () => {
 	});
 
 	describe("fixFileMode is SafeAndUnsafeFixes", () => {
-		it("should emit diagnotics", () => {
+		it("should emit diagnostics", () => {
 			const result = biome.lintContent(inputCode, {
 				filePath: "example.js",
 				fixFileMode: "SafeAndUnsafeFixes",

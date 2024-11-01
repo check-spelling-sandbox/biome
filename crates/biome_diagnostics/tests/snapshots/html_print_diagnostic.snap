@@ -1,5 +1,5 @@
 ---
-source: crates/biome_diagnostics/tests/disagnostics.rs
+source: crates/biome_diagnostics/tests/diagnostics.rs
 expression: content
 ---
 code_block:1:11 check <span style="color: #000; background-color: #ddd;"> FIXABLE </span> ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
