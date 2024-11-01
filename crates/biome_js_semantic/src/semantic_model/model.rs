@@ -6,8 +6,8 @@ pub(crate) struct BindingId(u32);
 
 impl BindingId {
     pub(crate) fn new(index: usize) -> Self {
-        // SAFETY: We didn't handle files execedding `u32::MAX` bytes.
-        // Thus, it isn't possible to execedd `u32::MAX` bindings.
+        // SAFETY: We didn't handle files exceeding `u32::MAX` bytes.
+        // Thus, it isn't possible to exceed `u32::MAX` bindings.
         Self(index as u32)
     }
 
@@ -21,8 +21,8 @@ pub(crate) struct ReferenceId(BindingId, u32);
 
 impl ReferenceId {
     pub(crate) fn new(binding_id: BindingId, index: usize) -> Self {
-        // SAFETY: We didn't handle files execedding `u32::MAX` bytes.
-        // Thus, it isn't possible to execedd `u32::MAX` refernces.
+        // SAFETY: We didn't handle files exceeding `u32::MAX` bytes.
+        // Thus, it isn't possible to exceed `u32::MAX` refernces.
         Self(binding_id, index as u32)
     }
 
@@ -44,8 +44,8 @@ pub struct ScopeId(std::num::NonZeroU32);
 // to ensure that the API consumers don't create `ScopeId`.
 impl ScopeId {
     pub(crate) fn new(index: usize) -> Self {
-        // SAFETY: We didn't handle files execedding `u32::MAX` bytes.
-        // Thus, it isn't possible to execedd `u32::MAX` scopes.
+        // SAFETY: We didn't handle files exceeding `u32::MAX` bytes.
+        // Thus, it isn't possible to exceed `u32::MAX` scopes.
         //
         // Adding 1 ensures that the value is never equal to 0.
         // Instead of adding 1, we could XOR the value with `u32::MAX`.

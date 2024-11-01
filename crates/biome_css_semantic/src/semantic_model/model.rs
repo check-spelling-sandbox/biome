@@ -235,8 +235,8 @@ pub struct RuleId(u32);
 
 impl RuleId {
     pub fn new(index: usize) -> Self {
-        // SAFETY: We didn't handle files execedding `u32::MAX` bytes.
-        // Thus, it isn't possible to execedd `u32::MAX` bindings.
+        // SAFETY: We didn't handle files exceeding `u32::MAX` bytes.
+        // Thus, it isn't possible to exceed `u32::MAX` bindings.
         Self(index as u32)
     }
 
