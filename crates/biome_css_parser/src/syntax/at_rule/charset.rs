@@ -26,7 +26,7 @@ pub(crate) fn parse_charset_at_rule(p: &mut CssParser) -> ParsedSyntax {
 
     let kind = match parse_string(p).or_recover_with_token_set(
         p,
-        &ParseRecoveryTokenSet::new(CSS_BOGUS, CHARTSET_RECOVERY_SET)
+        &ParseRecoveryTokenSet::new(CSS_BOGUS, CHARSET_RECOVERY_SET)
             .enable_recovery_on_line_break(),
         expected_string,
     ) {
@@ -46,14 +46,14 @@ pub(crate) fn parse_charset_at_rule(p: &mut CssParser) -> ParsedSyntax {
     Present(m.complete(p, kind))
 }
 
-const CHARTSET_RECOVERY_SET: TokenSet<CssSyntaxKind> = token_set![T![;]];
+const CHARSET_RECOVERY_SET: TokenSet<CssSyntaxKind> = token_set![T![;]];
 
 #[inline]
 fn eat_or_recover_close_token(p: &mut CssParser, encoding: CompletedMarker) -> bool {
     if p.eat(T![;]) {
         true
     } else {
-        if let Ok(m) = ParseRecoveryTokenSet::new(CSS_BOGUS, CHARTSET_RECOVERY_SET)
+        if let Ok(m) = ParseRecoveryTokenSet::new(CSS_BOGUS, CHARSET_RECOVERY_SET)
             .enable_recovery_on_line_break()
             .recover(p)
         {
