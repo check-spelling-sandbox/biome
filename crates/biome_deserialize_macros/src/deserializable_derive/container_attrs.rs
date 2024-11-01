@@ -37,7 +37,7 @@ impl FromStr for UnknownFields {
             "warn" => Ok(Self::Warn),
             "deny" => Ok(Self::Deny),
             "allow" => Ok(Self::Allow),
-            _ => Err("unknown_fields takes a value amomg `deny`, `warn`, and `allow`."),
+            _ => Err("unknown_fields takes a value among `deny`, `warn`, and `allow`."),
         }
     }
 }
