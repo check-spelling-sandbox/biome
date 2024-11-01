@@ -114,7 +114,7 @@ pub enum RuleSource {
     EslintSonarJs(&'static str),
     /// Rules from [Eslint Plugin Stylistic](https://eslint.style)
     EslintStylistic(&'static str),
-    /// Rules from [Eslint Plugin Typescript](https://typescript-eslint.io)
+    /// Rules from [Eslint Plugin TypeScript](https://typescript-eslint.io)
     EslintTypeScript(&'static str),
     /// Rules from [Eslint Plugin Unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
     EslintUnicorn(&'static str),

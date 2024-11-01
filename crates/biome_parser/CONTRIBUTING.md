@@ -358,7 +358,7 @@ In these cases the `ParseSeparatedList` and `ParseNodeList` will recover the par
 The conditional syntax allows you to express that some syntax may not be valid in all source files. Some use cases are:
 
 * syntax that is only supported in strict or sloppy mode: for example, `with` statements is not valid when a JavaScript file uses `"use strict"` or is a module;
-* syntax that is only supported in certain file types: Typescript, JSX, modules;
+* syntax that is only supported in certain file types: TypeScript, JSX, modules;
 * syntax that is only available in specific language versions: experimental features, different versions of the language e.g. (ECMA versions for JavaScript);
 
 The idea is that the parser always parses the syntax regardless of whatever it is supported in this specific file or context.

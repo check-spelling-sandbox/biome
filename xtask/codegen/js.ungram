@@ -317,7 +317,7 @@ AnyJsExpression =
 	| JsYieldExpression
 	| JsNewTargetExpression
 	| JsTemplateExpression
-	// Typescript
+	// TypeScript
 	| TsTypeAssertionExpression
 	| TsAsExpression
 	| TsSatisfiesExpression
@@ -1379,7 +1379,7 @@ JsExport =
 // export * from "b";
 // export { a, b as c } from "b";
 //
-// Typescript:
+// TypeScript:
 // export type A = string;
 // export enum B { A, B }
 // export interface C {}
@@ -1674,7 +1674,7 @@ AnyJsDecorator =
 ///////////////
 //
 // Below here we want to keep all the TypeScript types
-// Typescript definitions
+// TypeScript definitions
 //
 
 AnyTsType =
@@ -2208,7 +2208,7 @@ TsTypeAssertionExpression =
 	'>'
 	expression: AnyJsExpression
 
-// This `SyntaxKind` is related to `ExpressionWithTypeArguments` in Typescript
+// This `SyntaxKind` is related to `ExpressionWithTypeArguments` in TypeScript
 TsInstantiationExpression =
 	expression: AnyJsExpression
 	arguments: TsTypeArguments

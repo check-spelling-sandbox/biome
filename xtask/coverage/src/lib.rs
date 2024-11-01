@@ -22,8 +22,8 @@ use jsx::jsx_babel::BabelJsxTestSuite;
 use serde::{Deserialize, Serialize};
 use std::any::Any;
 use symbols::msts::SymbolsMicrosoftTestSuite;
-use ts::ts_babel::BabelTypescriptTestSuite;
-use ts::ts_microsoft::MicrosoftTypescriptTestSuite;
+use ts::ts_babel::BabelTypeScriptTestSuite;
+use ts::ts_microsoft::MicrosoftTypeScriptTestSuite;
 use util::decode_maybe_utf16_string;
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -180,8 +180,8 @@ fn get_test_suites(suites: Option<&str>) -> Vec<Box<dyn TestSuite>> {
             ALL_SUITES => ids.extend(["js", "ts", "jsx", "symbols"]),
 
             "js/262" => suites.push(Box::new(Test262TestSuite)),
-            "ts/microsoft" => suites.push(Box::new(MicrosoftTypescriptTestSuite)),
-            "ts/babel" => suites.push(Box::new(BabelTypescriptTestSuite)),
+            "ts/microsoft" => suites.push(Box::new(MicrosoftTypeScriptTestSuite)),
+            "ts/babel" => suites.push(Box::new(BabelTypeScriptTestSuite)),
             "jsx/babel" => suites.push(Box::new(BabelJsxTestSuite)),
             "symbols/microsoft" => suites.push(Box::new(SymbolsMicrosoftTestSuite)),
 

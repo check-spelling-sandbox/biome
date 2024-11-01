@@ -240,7 +240,7 @@ assert_semantics! {
         console.log(a/*READ A1*/);",
 }
 
-// Typescript types
+// TypeScript types
 assert_semantics! {
     ok_typescript_function_type,
         "function f (a/*#A1*/, b: (a/*#A2*/) => any) { return b(a/*READ A1*/); };",

@@ -146,7 +146,7 @@ fn suggestion_for_binding(binding: &AnyJsIdentifierBinding) -> Option<SuggestedF
     }
 }
 
-// It is ok in some Typescripts constructs for a parameter to be unused.
+// It is ok in some TypeScripts constructs for a parameter to be unused.
 // Returning None means is ok to be unused
 fn suggested_fix_if_unused(binding: &AnyJsIdentifierBinding) -> Option<SuggestedFix> {
     let decl = binding.declaration()?;

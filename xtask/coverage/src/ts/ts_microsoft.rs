@@ -15,8 +15,8 @@ use std::path::Path;
 use std::process::Command;
 use xtask::project_root;
 
-const CASES_PATH: &str = "xtask/coverage/Typescript/tests/cases";
-const REFERENCE_PATH: &str = "xtask/coverage/Typescript/tests/baselines/reference";
+const CASES_PATH: &str = "xtask/coverage/TypeScript/tests/cases";
+const REFERENCE_PATH: &str = "xtask/coverage/TypeScript/tests/baselines/reference";
 
 #[derive(Debug)]
 struct MicrosoftTypeScriptTestCase {
@@ -78,9 +78,9 @@ impl TestCase for MicrosoftTypeScriptTestCase {
 }
 
 #[derive(Default)]
-pub(crate) struct MicrosoftTypescriptTestSuite;
+pub(crate) struct MicrosoftTypeScriptTestSuite;
 
-impl TestSuite for MicrosoftTypescriptTestSuite {
+impl TestSuite for MicrosoftTypeScriptTestSuite {
     fn name(&self) -> &str {
         "ts/microsoft"
     }
@@ -102,11 +102,11 @@ impl TestSuite for MicrosoftTypescriptTestSuite {
     }
 
     fn checkout(&self) -> io::Result<()> {
-        let base_path = project_root().join("xtask/coverage/Typescript");
+        let base_path = project_root().join("xtask/coverage/TypeScript");
         let mut command = Command::new("git");
         command
             .arg("clone")
-            .arg("https://github.com/microsoft/Typescript.git")
+            .arg("https://github.com/microsoft/TypeScript.git")
             .arg("--depth")
             .arg("1")
             .arg(base_path.display().to_string());

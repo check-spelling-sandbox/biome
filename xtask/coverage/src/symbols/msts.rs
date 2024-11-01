@@ -14,8 +14,8 @@ use std::process::Command;
 use std::str::FromStr;
 use xtask::project_root;
 
-const CASES_PATH: &str = "xtask/coverage/Typescript/tests/baselines/reference";
-const BASE_PATH: &str = "xtask/coverage/Typescript";
+const CASES_PATH: &str = "xtask/coverage/TypeScript/tests/baselines/reference";
+const BASE_PATH: &str = "xtask/coverage/TypeScript";
 
 #[derive(Debug)]
 struct SymbolsMicrosoftTestCase {
@@ -199,7 +199,7 @@ impl TestSuite for SymbolsMicrosoftTestSuite {
         let mut command = Command::new("git");
         command
             .arg("clone")
-            .arg("https://github.com/microsoft/Typescript.git")
+            .arg("https://github.com/microsoft/TypeScript.git")
             .arg("--depth")
             .arg("1")
             .arg(base_path.display().to_string());
@@ -252,8 +252,8 @@ struct SymbolsFile {
 ///   \--> text of the symbol
 /// ```
 ///
-/// To understand how the Typescript codebase generate this line
-/// see xtask\coverage\Typescript\src\harness\typeWriter.ts
+/// To understand how the TypeScript codebase generate this line
+/// see xtask\coverage\TypeScript\src\harness\typeWriter.ts
 fn parse_symbol(input: &str) -> Option<Symbol> {
     let (input, _) = parse_str(input, ">")?;
     let (input, name) = parse_until_chr(input, |x| x.is_whitespace() || x == ':')?;
@@ -317,7 +317,7 @@ fn parse_decl(input: &str) -> Option<(&str, Decl)> {
 }
 
 /// This method will load .symbols file
-/// from the Typescript test suite.
+/// from the TypeScript test suite.
 /// Each file is composed of:
 /// first line pointing to the original ts file;
 /// For each line of the source file: the actual ts line;

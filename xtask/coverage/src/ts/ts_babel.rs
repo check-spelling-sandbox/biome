@@ -13,14 +13,14 @@ use xtask::project_root;
 
 const CASES_PATH: &str = "xtask/coverage/babel/packages/babel-parser/test/fixtures/typescript";
 
-struct BabelTypescriptTestCase {
+struct BabelTypeScriptTestCase {
     name: String,
     expected_to_fail: bool,
     code: String,
     variant: LanguageVariant,
 }
 
-impl BabelTypescriptTestCase {
+impl BabelTypeScriptTestCase {
     fn new(path: &Path, code: String, expected_to_fail: bool, variant: LanguageVariant) -> Self {
         let name = path
             .parent()
@@ -39,7 +39,7 @@ impl BabelTypescriptTestCase {
     }
 }
 
-impl TestCase for BabelTypescriptTestCase {
+impl TestCase for BabelTypeScriptTestCase {
     fn name(&self) -> &str {
         &self.name
     }
@@ -81,9 +81,9 @@ impl TestCase for BabelTypescriptTestCase {
 }
 
 #[derive(Default)]
-pub(crate) struct BabelTypescriptTestSuite;
+pub(crate) struct BabelTypeScriptTestSuite;
 
-impl TestSuite for BabelTypescriptTestSuite {
+impl TestSuite for BabelTypeScriptTestSuite {
     fn name(&self) -> &str {
         "ts/babel"
     }
@@ -141,7 +141,7 @@ impl TestSuite for BabelTypescriptTestSuite {
             }
         };
 
-        Some(Box::new(BabelTypescriptTestCase::new(
+        Some(Box::new(BabelTypeScriptTestCase::new(
             path,
             code,
             should_fail,

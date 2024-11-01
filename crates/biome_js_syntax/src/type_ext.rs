@@ -79,7 +79,7 @@ impl AnyTsType {
         )
     }
 
-    /// Checks if `self` stands as the `true_type` of a conditional type in Typescript.
+    /// Checks if `self` stands as the `true_type` of a conditional type in TypeScript.
     ///
     /// # Examples
     ///

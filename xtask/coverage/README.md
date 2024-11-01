@@ -21,7 +21,7 @@ OPTIONS
                             ts: will run all typescript suites; Same as "ts/microsoft,ts/babel";
                             jsx: will run all jsx suites; Same as "jsx/babel";
                             js/262: will run https://github.com/tc39/test262/tree/main/test;
-                            ts/microsoft: will run https://github.com/microsoft/Typescript/tree/main/tests/cases
+                            ts/microsoft: will run https://github.com/microsoft/TypeScript/tree/main/tests/cases
                             ts/babel: will run https://github.com/babel/babel/tree/main/packages/babel-parser/test/fixtures/typescript
                             jsx/babel: will run https://github.com/babel/babel/tree/main/packages/babel-parser/test/fixtures/jsx/basic
                         Default is "*".

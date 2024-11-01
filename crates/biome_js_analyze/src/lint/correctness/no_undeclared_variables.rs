@@ -64,7 +64,7 @@ impl Rule for NoUndeclaredVariables {
                     return None;
                 }
 
-                // Typescript Const Assertion
+                // TypeScript Const Assertion
                 if text == "const" && under_as_expression {
                     return None;
                 }
