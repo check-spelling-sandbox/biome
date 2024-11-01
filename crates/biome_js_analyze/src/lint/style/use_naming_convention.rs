@@ -1120,8 +1120,8 @@ impl Selector {
                 Modifier::Protected,
             ));
         }
-        let abstarct_or_static = Modifier::Abstract | Modifier::Static;
-        if *self.modifiers & abstarct_or_static == abstarct_or_static {
+        let abstract_or_static = Modifier::Abstract | Modifier::Static;
+        if *self.modifiers & abstract_or_static == abstract_or_static {
             return Err(InvalidSelector::IncompatibleModifiers(
                 Modifier::Abstract,
                 Modifier::Static,
