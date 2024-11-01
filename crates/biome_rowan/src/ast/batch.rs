@@ -532,7 +532,7 @@ where
 
                 return (
                     // SAFETY: If the change is propagated from the child,
-                    // this will allways be a syntax node element because
+                    // this will always be a syntax node element because
                     // that's how we construct it above.
                     //
                     // Otherwise root should still exist as a node even if
