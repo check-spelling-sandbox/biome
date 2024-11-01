@@ -549,7 +549,7 @@ fn does_preserve_group_recommended_when_override_global_recommened() {
 }
 
 #[test]
-fn does_preserve_individually_diabled_rules_in_overrides() {
+fn does_preserve_individually_disabled_rules_in_overrides() {
     let mut console = BufferConsole::default();
     let mut fs = MemoryFileSystem::default();
     let file_path = Path::new("biome.json");
@@ -595,7 +595,7 @@ fn does_preserve_individually_diabled_rules_in_overrides() {
 
     assert_cli_snapshot(SnapshotPayload::new(
         module_path!(),
-        "does_preserve_individually_diabled_rules_in_overrides",
+        "does_preserve_individually_disabled_rules_in_overrides",
         fs,
         console,
         result,
