@@ -70,7 +70,7 @@ declare_lint_rule! {
     ///
     /// ```js
     /// let a;
-    /// a; // the variable is read before its assignement
+    /// a; // the variable is read before its assignment
     /// a = 0;
     /// ```
     pub UseConst {
@@ -217,7 +217,7 @@ fn check_binding_can_be_const(
 
     let binding_scope = binding.scope(model);
     let write = writes.next()?;
-    // If teher are multiple assignement or the write is not in the same scope
+    // If teher are multiple assignment or the write is not in the same scope
     if writes.next().is_some() || write.scope() != binding_scope {
         return None;
     }
