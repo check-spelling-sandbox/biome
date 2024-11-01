@@ -149,7 +149,7 @@ invalid.js:3:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━�
     4 │ 		test("bar", () => {
     5 │ 			someFn();
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -166,7 +166,7 @@ invalid.js:12:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     13 │ 		test("bar", () => {
     14 │ 			someFn();
   
-  i Disallow beforeAll duplicacy inside the describe function.
+  i Disallow beforeAll duplicate inside the describe function.
   
 
 ```
@@ -183,7 +183,7 @@ invalid.js:20:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     21 │ 		test("bar", () => {
     22 │ 			someFn();
   
-  i Disallow afterEach duplicacy inside the describe function.
+  i Disallow afterEach duplicate inside the describe function.
   
 
 ```
@@ -200,7 +200,7 @@ invalid.js:28:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     29 │ 		test("bar", () => {
     30 │ 			someFn();
   
-  i Disallow afterAll duplicacy inside the describe function.
+  i Disallow afterAll duplicate inside the describe function.
   
 
 ```
@@ -217,7 +217,7 @@ invalid.js:36:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     37 │ 		beforeEach(() => {}),
     38 │ 		test("bar", () => {
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -234,7 +234,7 @@ invalid.js:37:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     38 │ 		test("bar", () => {
     39 │ 			someFn();
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -251,7 +251,7 @@ invalid.js:45:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     46 │ 		beforeAll(() => {}),
     47 │ 		beforeAll(() => {}),
   
-  i Disallow afterAll duplicacy inside the describe function.
+  i Disallow afterAll duplicate inside the describe function.
   
 
 ```
@@ -268,7 +268,7 @@ invalid.js:47:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     48 │ 		test("bar", () => {
     49 │ 			someFn();
   
-  i Disallow beforeAll duplicacy inside the describe function.
+  i Disallow beforeAll duplicate inside the describe function.
   
 
 ```
@@ -285,7 +285,7 @@ invalid.js:55:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     56 │ 		beforeAll(() => {}),
     57 │ 		test("bar", () => {
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -302,7 +302,7 @@ invalid.js:69:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     70 │ 		test("inner bar", () => {
     71 │ 			someFn();
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -319,7 +319,7 @@ invalid.js:78:2 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     79 │ 
     80 │ 	it("is not fine", () => {});
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -336,7 +336,7 @@ invalid.js:92:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━━
     93 │ 
     94 │ 		it("is not fine", () => {});
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -353,7 +353,7 @@ invalid.js:108:4 lint/suspicious/noDuplicateTestHooks ━━━━━━━━�
     109 │ 
     110 │ 			it("is not fine", () => {});
   
-  i Disallow beforeEach duplicacy inside the describe function.
+  i Disallow beforeEach duplicate inside the describe function.
   
 
 ```
@@ -370,7 +370,7 @@ invalid.js:117:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━�
     118 │ 		test("bar", () => {
     119 │ 			someFn();
   
-  i Disallow before duplicacy inside the describe function.
+  i Disallow before duplicate inside the describe function.
   
 
 ```
@@ -387,7 +387,7 @@ invalid.js:125:3 lint/suspicious/noDuplicateTestHooks ━━━━━━━━�
     126 │ 		test("bar", () => {
     127 │ 			someFn();
   
-  i Disallow after duplicacy inside the describe function.
+  i Disallow after duplicate inside the describe function.
   
 
 ```

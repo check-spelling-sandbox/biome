@@ -230,7 +230,7 @@ impl Rule for NoDuplicateTestHooks {
                 },
             )
             .note(markup! {
-                "Disallow "<Emphasis>{node_name.text_trimmed()}</Emphasis>" duplicacy inside the describe function."
+                "Disallow "<Emphasis>{node_name.text_trimmed()}</Emphasis>" duplicate inside the describe function."
             }),
         )
     }
