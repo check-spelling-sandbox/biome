@@ -1762,7 +1762,7 @@ pub(crate) fn parse_template_elements<P>(
                 p.error(err);
                 p.bump_with_context(p.cur(), JsLexContext::TemplateElement { tagged });
             }
-            t => unreachable!("Anything not template chunk or dollarcurly should have been eaten by the lexer, but {:?} was found", t),
+            t => unreachable!("Anything not template chunk or dollar curly should have been eaten by the lexer, but {:?} was found", t),
         };
     }
 }
