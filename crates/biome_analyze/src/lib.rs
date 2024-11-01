@@ -325,7 +325,7 @@ where
 
     /// Process the text for a single token, parsing suppression comments and
     /// handling line breaks, then flush all pending query signals in the queue
-    /// whose position is less then the end of the token within the file
+    /// whose position is less than the end of the token within the file
     fn handle_token(&mut self, token: SyntaxToken<L>) -> ControlFlow<Break> {
         // Process the content of the token for comments and newline
         for (index, piece) in token.leading_trivia().pieces().enumerate() {
