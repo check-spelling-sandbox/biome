@@ -130,7 +130,7 @@ impl Rule for NoBannedTypes {
                 let ts_any_name = ts_reference_type.name().ok()?;
                 let reference_identifier = ts_any_name.as_js_reference_identifier()?;
                 if model.binding(reference_identifier).is_none() {
-                    // if the dientifier is global
+                    // if the identifier is global
                     let identifier_token = reference_identifier.value_token().ok()?;
                     if let Some(banned_type) = BannedType::from_str(identifier_token.text_trimmed())
                     {
