@@ -60,7 +60,7 @@ use crate::{Language, SyntaxNode, SyntaxSlot, SyntaxToken};
 ///                 }
 ///             }
 ///             _ => {
-///                 // Traverse into the childrens of node
+///                 // Traverse into the children of node
 ///                 VisitNodeSignal::Traverse(node)
 ///             }
 ///         }
