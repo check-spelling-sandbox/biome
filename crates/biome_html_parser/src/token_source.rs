@@ -32,18 +32,18 @@ pub(crate) enum HtmlLexContext {
     /// When the parser has encounters the sequence `<!DOCTYPE`, it switches to this context. It will remain in this context until the next `>` token is encountered.
     Doctype,
     /// Treat everything as text until the closing tag is encountered.
-    EmbeddedLanguage(HtmlEmbededLanguage),
+    EmbeddedLanguage(HtmlEmbeddedLanguage),
     /// Comments are treated as text until the closing comment tag is encountered.
     Comment,
 }
 
 #[derive(Copy, Clone, Debug)]
-pub(crate) enum HtmlEmbededLanguage {
+pub(crate) enum HtmlEmbeddedLanguage {
     Script,
     Style,
 }
 
-impl HtmlEmbededLanguage {
+impl HtmlEmbeddedLanguage {
     pub fn end_tag(&self) -> &'static str {
         match self {
             Self::Script => "</script>",

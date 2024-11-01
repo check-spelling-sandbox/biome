@@ -1,6 +1,6 @@
 mod tests;
 
-use crate::token_source::{HtmlEmbededLanguage, HtmlLexContext};
+use crate::token_source::{HtmlEmbeddedLanguage, HtmlLexContext};
 use biome_html_syntax::HtmlSyntaxKind::{
     DOCTYPE_KW, EOF, ERROR_TOKEN, HTML_KW, HTML_LITERAL, HTML_STRING_LITERAL, NEWLINE, TOMBSTONE,
     UNICODE_BOM, WHITESPACE,
@@ -115,7 +115,7 @@ impl<'src> HtmlLexer<'src> {
     fn consume_token_embedded_language(
         &mut self,
         _current: u8,
-        lang: HtmlEmbededLanguage,
+        lang: HtmlEmbeddedLanguage,
     ) -> HtmlSyntaxKind {
         let start = self.text_position();
         let end_tag = lang.end_tag();

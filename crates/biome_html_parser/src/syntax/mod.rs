@@ -2,7 +2,7 @@ mod parse_error;
 
 use crate::parser::HtmlParser;
 use crate::syntax::parse_error::*;
-use crate::token_source::{HtmlEmbededLanguage, HtmlLexContext};
+use crate::token_source::{HtmlEmbeddedLanguage, HtmlLexContext};
 use biome_html_syntax::HtmlSyntaxKind::*;
 use biome_html_syntax::{HtmlSyntaxKind, T};
 use biome_parser::parse_lists::ParseNodeList;
@@ -102,8 +102,8 @@ fn parse_element(p: &mut HtmlParser) -> ParsedSyntax {
             T![>],
             if is_embedded_language_tag {
                 HtmlLexContext::EmbeddedLanguage(match opening_tag_name.as_str() {
-                    tag if tag.eq_ignore_ascii_case("script") => HtmlEmbededLanguage::Script,
-                    tag if tag.eq_ignore_ascii_case("style") => HtmlEmbededLanguage::Style,
+                    tag if tag.eq_ignore_ascii_case("script") => HtmlEmbeddedLanguage::Script,
+                    tag if tag.eq_ignore_ascii_case("style") => HtmlEmbeddedLanguage::Style,
                     _ => unreachable!(),
                 })
             } else {
