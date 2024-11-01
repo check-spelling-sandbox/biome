@@ -1185,7 +1185,7 @@ AnyCssPageSelector =
 // @page name:first,:blank:first {  }
 //       ^^^^^^^^^^ ^^^^^^^^^^^^
 // NOTE: The CSS Spec uses `<ident>` for the name, but also explicitly states
-// that the name is case sensitive. For simplicity, `<custom-ident>` gets the
+// that the name is case-sensitive. For simplicity, `<custom-ident>` gets the
 // exact same behavior.
 CssPageSelector =
 	type: CssCustomIdentifier?
@@ -1792,10 +1792,10 @@ CssUnicodeRangeInterval =
 
 // Any identifier. Case-insensitive, used for standard property names, values, type selectors, etc.
 CssIdentifier = value: 'ident'
-// Any non-standard identifier. Case sensitive, used for class names, ids, etc. Custom identifiers
+// Any non-standard identifier. Case-sensitive, used for class names, ids, etc. Custom identifiers
 // _may_ overlap with standard identifiers defined by CSS (e.g., `color`).
 CssCustomIdentifier = value: 'ident'
-// An identifier starting with two dashes, `--`. Case sensitive, used for custom property names.
+// An identifier starting with two dashes, `--`. Case-sensitive, used for custom property names.
 // Dashed identifiers are guaranteed to never overlap with an identifier defined by CSS.
 CssDashedIdentifier = value: 'ident'
 CssString = value: 'css_string_literal'

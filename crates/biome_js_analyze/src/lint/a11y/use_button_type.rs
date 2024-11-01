@@ -197,9 +197,9 @@ fn inspect_jsx_type_attribute(attribute: &JsxAttribute) -> Option<UseButtonTypeS
 
 /// Checks whether the current element is a button
 ///
-/// Case sensitive is important, `<button>` is different from `<Button>`
+/// Case-sensitive is important, `<button>` is different from `<Button>`
 fn is_button(name: &AnyJsxElementName) -> Option<bool> {
-    // case sensitive is important, <button> is different from <Button>
+    // case-sensitive is important, <button> is different from <Button>
     Some(match name {
         AnyJsxElementName::JsxName(name) => {
             let name = name.value_token().ok()?;

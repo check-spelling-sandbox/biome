@@ -459,7 +459,7 @@ pub(crate) fn is_at_dashed_identifier(p: &mut CssParser) -> bool {
 }
 
 /// Dashed identifiers are any identifiers that start with two dashes (`--`).
-/// Case sensitive, these are guaranteed to never overlap with an identifier
+/// Case-sensitive, these are guaranteed to never overlap with an identifier
 /// defined by CSS.
 #[inline]
 pub(crate) fn parse_dashed_identifier(p: &mut CssParser) -> ParsedSyntax {
