@@ -128,7 +128,7 @@ declare_lint_rule! {
     ///
     /// ### Presets can't be modified
     ///
-    /// In Tailwind CSS, core plugins (which provide the default utilities and variants) can be disabled. In Biome, however, there is no way to disable parts of a preset: it's all or nothing. A work-around is to, instead of using a preset, manually specify all utilities and variants in the Biome configuration file.
+    /// In Tailwind CSS, core plugins (which provide the default utilities and variants) can be disabled. In Biome, however, there is no way to disable parts of a preset: it's all or nothing. A workaround is to, instead of using a preset, manually specify all utilities and variants in the Biome configuration file.
     ///
     /// ### Whitespace is collapsed
     ///
