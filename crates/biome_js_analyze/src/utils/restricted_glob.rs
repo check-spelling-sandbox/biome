@@ -208,7 +208,7 @@ pub enum RestrictedGlobError {
         kind: RestrictedGlobErrorKind,
         index: u32,
     },
-    /// Error caused by a a third-party module.
+    /// Error caused by a third-party module.
     Generic(Box<str>),
 }
 impl RestrictedGlobError {
