@@ -93,20 +93,20 @@ pub trait FileSystem: Send + Sync + RefUnwindSafe {
         file_names: &[&str],
         should_error_if_file_not_found: bool,
     ) -> AutoSearchResultAlias {
-        let mut curret_search_dir = search_dir.to_path_buf();
+        let mut current_search_dir = search_dir.to_path_buf();
         let mut is_searching_in_parent_dir = false;
         loop {
             let mut errors: Vec<FileSystemDiagnostic> = vec![];
 
             // Iterate all possible file names
             for file_name in file_names {
-                let file_path = curret_search_dir.join(file_name);
+                let file_path = current_search_dir.join(file_name);
                 match self.read_file_from_path(&file_path) {
                     Ok(content) => {
                         if is_searching_in_parent_dir {
                             info!(
                                 "Biome auto discovered the file at the following path that isn't in the working directory:\n{:?}",
-                                curret_search_dir.display()
+                                current_search_dir.display()
                             );
                         }
                         return Ok(Some(AutoSearchResult { content, file_path }));
@@ -128,8 +128,8 @@ pub trait FileSystem: Send + Sync + RefUnwindSafe {
                 }
             }
 
-            if let Some(parent_search_dir) = curret_search_dir.parent() {
-                curret_search_dir = PathBuf::from(parent_search_dir);
+            if let Some(parent_search_dir) = current_search_dir.parent() {
+                current_search_dir = PathBuf::from(parent_search_dir);
                 is_searching_in_parent_dir = true;
             } else {
                 break;
