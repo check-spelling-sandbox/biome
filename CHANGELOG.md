@@ -2712,7 +2712,7 @@ New rules are incubated in the nursery group.
 Once stable, we promote them to a stable group.
 The following rules are promoted:
 
-- [complecity/noExcessiveNestedTestSuites](https://biomejs.dev/linter/rules/no-excessive-nested-test-suites)
+- [complexity/noExcessiveNestedTestSuites](https://biomejs.dev/linter/rules/no-excessive-nested-test-suites)
 - [complexity/noUselessTernary](https://biomejs.dev/linter/rules/no-useless-ternary)
 - [correctness/useJsxKeyInIterable](https://biomejs.dev/linter/rules/use-jsx-key-in-iterable)
 - [performance/noBarrelFile](https://biomejs.dev/linter/rules/no-barrel-file/)
