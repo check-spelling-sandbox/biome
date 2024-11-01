@@ -583,7 +583,7 @@ pub(crate) enum Rule {
     /// Any rule without its options.
     Any(Cow<'static, str>, Severity),
     // Eslint rules with its options
-    // We use this to configure equivalent Bione's rules.
+    // We use this to configure equivalent Biome's rules.
     NoConsole(RuleConf<Box<NoConsoleOptions>>),
     NoRestrictedGlobals(RuleConf<Box<NoRestrictedGlobal>>),
     // Eslint plugins
