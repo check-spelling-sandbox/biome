@@ -303,7 +303,7 @@ fn format_signature(
                 [
                     // This soft break is placed outside of the group to ensure
                     // that the parameter group only tries to write on a single
-                    // line and can't break pre-emptively without also causing
+                    // line and can't break preemptively without also causing
                     // the parent (i.e., this ArrowChain) to break first.
                     (!is_first_in_chain).then_some(soft_line_break_or_space()),
                     group(&format_args![
