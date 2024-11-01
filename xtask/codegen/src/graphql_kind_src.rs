@@ -141,7 +141,7 @@ pub const GRAPHQL_KINDS_SRC: KindsSrc = KindsSrc {
         "GRAPHQL_INPUT_OBJECT_TYPE_EXTENSION",
         "GRAPHQL_DIRECTIVE_LOCATION_LIST",
         "GRAPHQL_DIRECTIVE_LOCATION",
-        // literal wrappers:
+        // literal wrappears:
         "GRAPHQL_STRING_VALUE",
         "GRAPHQL_FLOAT_VALUE",
         "GRAPHQL_INT_VALUE",

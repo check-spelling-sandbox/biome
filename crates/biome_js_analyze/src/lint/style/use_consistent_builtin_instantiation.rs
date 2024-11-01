@@ -40,7 +40,7 @@ declare_lint_rule! {
     /// - Number
     /// - String
     ///
-    /// > These should not use `new` as that would create object wrappers for the primitive values, which is not what you want.
+    /// > These should not use `new` as that would create object wrappears for the primitive values, which is not what you want.
     /// > However, without `new` they can be useful for coercing a value to that type.
     ///
     /// Note that, builtins that require `new` to be instantiated and
@@ -73,7 +73,7 @@ declare_lint_rule! {
         name: "useConsistentBuiltinInstantiation",
         language: "js",
         sources: &[
-            RuleSource::Eslint("no-new-wrappers"),
+            RuleSource::Eslint("no-new-wrappears"),
             // FIXME: uncomment once we allow multiple rules to have the same source.
             //RuleSource::Eslint("no-new-native-nonconstructor"),
         ],

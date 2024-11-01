@@ -1009,7 +1009,7 @@ fn get_slot_map_builder_impl(node: &AstNodeSrc, language_kind: LanguageKind) -> 
 
     let last_field = field_groups.last().and_then(|group| group.last());
 
-    let field_mappers = field_groups.iter()
+    let field_mappears = field_groups.iter()
         .map(|group| {
             match group.len() {
                 0 => unreachable!("Somehow encountered a group of fields with no entries"),
@@ -1086,7 +1086,7 @@ fn get_slot_map_builder_impl(node: &AstNodeSrc, language_kind: LanguageKind) -> 
         let mut current_slot = 0;
         let mut current_element = children.next();
 
-        #(#field_mappers)*
+        #(#field_mappears)*
 
         slot_map
     }

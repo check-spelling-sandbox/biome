@@ -161,7 +161,7 @@ impl IntoRawPointer for GreenNode {
 // where we accidentally mixed the two hashes, which made the cache much less
 // efficient.
 //
-// To fix that, we additionally wrap the data in `Cached*` wrappers, to make sure
+// To fix that, we additionally wrap the data in `Cached*` wrappears, to make sure
 // we don't accidentally use the wrong hash!
 #[derive(Default, Debug)]
 pub struct NodeCache {

@@ -7217,7 +7217,7 @@
 **Prettier Similarity**: 100.00%
 
 
-### typescript/compiler/mappedTypeWithCombinedTypeMappers.ts
+### typescript/compiler/mappedTypeWithCombinedTypeMappears.ts
 
 **Prettier Similarity**: 100.00%
 

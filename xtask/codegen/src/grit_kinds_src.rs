@@ -199,7 +199,7 @@ pub const GRIT_KINDS_SRC: KindsSrc = KindsSrc {
         "GRIT_CODE_SNIPPET",
         "GRIT_NOT",
         "GRIT_UNDERSCORE",
-        // literal wrappers:
+        // literal wrappears:
         "GRIT_BACKTICK_SNIPPET_LITERAL",
         "GRIT_BOOLEAN_LITERAL",
         "GRIT_UNDEFINED_LITERAL",

@@ -1062,7 +1062,7 @@ pub(crate) fn migrate_eslint_any_rule(
             let rule = group.no_new_symbol.get_or_insert(Default::default());
             rule.set_level(rule_severity.into());
         }
-        "no-new-wrappers" => {
+        "no-new-wrappears" => {
             let group = rules.style.get_or_insert_with(Default::default);
             let rule = group
                 .use_consistent_builtin_instantiation
