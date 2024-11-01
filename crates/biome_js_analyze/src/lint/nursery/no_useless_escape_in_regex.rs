@@ -77,7 +77,7 @@ impl Rule for NoUselessEscapeInRegex {
                         // chartacters sets
                         | b'.' | b'd' | b'D' | b'w' | b'W' | b's' | b'S' |
                         b't' | b'r' | b'n' | b'v' | b'f' | b'0' | b'c' | b'x' | b'u'
-                        // char claass
+                        // char class
                         | b'[' | b']'
                         // Word boundary
                         | b'b' | b'B'
