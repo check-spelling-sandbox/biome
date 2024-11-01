@@ -74,7 +74,7 @@ impl Rule for NoUselessEscapeInRegex {
                         | b'/'
                         // Anchors
                         | b'^' | b'$'
-                        // chartacaters sets
+                        // chartacters sets
                         | b'.' | b'd' | b'D' | b'w' | b'W' | b's' | b'S' |
                         b't' | b'r' | b'n' | b'v' | b'f' | b'0' | b'c' | b'x' | b'u'
                         // char claass
@@ -115,7 +115,7 @@ impl Rule for NoUselessEscapeInRegex {
                                     b'-' if has_v_flag || escaped_index != (char_class_start_index + 2) => {}
                                     b'\\'
                                     | b']'
-                                    // chartacaters sets
+                                    // chartacters sets
                                     | b'd' | b'D' | b'w' | b'W' | b's' | b'S' |
                                     b't' | b'r' | b'n' | b'v' | b'f' | b'b' | b'0' |
                                     b'c' | b'x' | b'u' => {}
