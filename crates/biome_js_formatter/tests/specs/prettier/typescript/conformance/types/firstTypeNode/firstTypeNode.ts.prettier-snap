@@ -1,7 +1,7 @@
 export function fooWithTypePredicate(a: any): a is number {
   return true;
 }
-export function fooWithTypePredicateAndMulitpleParams(
+export function fooWithTypePredicateAndMultipleParams(
   a: any,
   b: any,
   c: any,
