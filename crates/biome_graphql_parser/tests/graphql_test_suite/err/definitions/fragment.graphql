@@ -3,7 +3,7 @@ fragment on on User {
   name
 }
 
-fragmen friendFields on User {
+fragment_ friendFields on User {
   id
   name
 }

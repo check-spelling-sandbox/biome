@@ -9,7 +9,7 @@ fragment on on User {
   name
 }
 
-fragmen friendFields on User {
+fragment_ friendFields on User {
   id
   name
 }
@@ -71,10 +71,10 @@ GraphqlRoot {
         },
         GraphqlBogusDefinition {
             items: [
-                IDENT@35..45 "fragmen" [Newline("\n"), Newline("\n")] [Whitespace(" ")],
-                IDENT@45..58 "friendFields" [] [Whitespace(" ")],
-                ON_KW@58..61 "on" [] [Whitespace(" ")],
-                IDENT@61..66 "User" [] [Whitespace(" ")],
+                IDENT@35..47 "fragment_" [Newline("\n"), Newline("\n")] [Whitespace(" ")],
+                IDENT@47..60 "friendFields" [] [Whitespace(" ")],
+                ON_KW@60..63 "on" [] [Whitespace(" ")],
+                IDENT@63..68 "User" [] [Whitespace(" ")],
             ],
         },
         GraphqlSelectionSet {
@@ -243,11 +243,11 @@ GraphqlRoot {
             3: GRAPHQL_DIRECTIVE_LIST@33..33
             4: (empty)
         2: R_CURLY@33..35 "}" [Newline("\n")] []
-    1: GRAPHQL_BOGUS_DEFINITION@35..66
-      0: IDENT@35..45 "fragmen" [Newline("\n"), Newline("\n")] [Whitespace(" ")]
-      1: IDENT@45..58 "friendFields" [] [Whitespace(" ")]
-      2: ON_KW@58..61 "on" [] [Whitespace(" ")]
-      3: IDENT@61..66 "User" [] [Whitespace(" ")]
+    1: GRAPHQL_BOGUS_DEFINITION@35..68
+      0: IDENT@35..47 "fragment_" [Newline("\n"), Newline("\n")] [Whitespace(" ")]
+      1: IDENT@47..60 "friendFields" [] [Whitespace(" ")]
+      2: ON_KW@60..63 "on" [] [Whitespace(" ")]
+      3: IDENT@63..68 "User" [] [Whitespace(" ")]
     2: GRAPHQL_SELECTION_SET@66..81
       0: L_CURLY@66..67 "{" [] []
       1: GRAPHQL_SELECTION_LIST@67..79
@@ -358,12 +358,12 @@ fragment.graphql:1:10 parse ━━━━━━━━━━━━━━━━━�
   
 fragment.graphql:6:1 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected a definition but instead found 'fragmen friendFields on User'.
+  × Expected a definition but instead found 'fragment_ friendFields on User'.
   
     4 │ }
     5 │ 
-  > 6 │ fragmen friendFields on User {
-      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 6 │ fragment_ friendFields on User {
+      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     7 │   id
     8 │   name
   
@@ -371,8 +371,8 @@ fragment.graphql:6:1 parse ━━━━━━━━━━━━━━━━━�
   
     4 │ }
     5 │ 
-  > 6 │ fragmen friendFields on User {
-      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 6 │ fragment_ friendFields on User {
+      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     7 │   id
     8 │   name
   
