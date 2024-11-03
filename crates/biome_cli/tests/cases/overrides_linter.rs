@@ -439,7 +439,7 @@ fn does_override_recommended() {
 }
 
 #[test]
-fn does_override_groupe_recommended() {
+fn does_override_group_recommended() {
     let mut console = BufferConsole::default();
     let mut fs = MemoryFileSystem::default();
     let file_path = Path::new("biome.json");
@@ -487,7 +487,7 @@ fn does_override_groupe_recommended() {
 
     assert_cli_snapshot(SnapshotPayload::new(
         module_path!(),
-        "does_override_groupe_recommended",
+        "does_override_group_recommended",
         fs,
         console,
         result,
