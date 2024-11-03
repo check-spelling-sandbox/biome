@@ -48,7 +48,7 @@ interface Person implement Character @ {
 
 inter Person
 
-interface Person implemets Character
+interface Person implements_ Character
 
 interface Person implements &
 
@@ -404,8 +404,8 @@ GraphqlRoot {
         },
         GraphqlBogusDefinition {
             items: [
-                IDENT@442..452 "implemets" [] [Whitespace(" ")],
-                IDENT@452..461 "Character" [] [],
+                IDENT@442..454 "implements_" [] [Whitespace(" ")],
+                IDENT@454..463 "Character" [] [],
             ],
         },
         GraphqlInterfaceTypeDefinition {
@@ -908,8 +908,8 @@ GraphqlRoot {
       4: GRAPHQL_DIRECTIVE_LIST@442..442
       5: (empty)
     16: GRAPHQL_BOGUS_DEFINITION@442..461
-      0: IDENT@442..452 "implemets" [] [Whitespace(" ")]
-      1: IDENT@452..461 "Character" [] []
+      0: IDENT@442..454 "implements_" [] [Whitespace(" ")]
+      1: IDENT@454..463 "Character" [] []
     17: GRAPHQL_INTERFACE_TYPE_DEFINITION@461..524
       0: (empty)
       1: INTERFACE_KW@461..473 "interface" [Newline("\n"), Newline("\n")] [Whitespace(" ")]
@@ -1338,7 +1338,7 @@ interface.graphql:43:1 parse ━━━━━━━━━━━━━━━━━
   > 43 │ inter Person
        │ ^^^^^^^^^^^^
     44 │ 
-    45 │ interface Person implemets Character
+    45 │ interface Person implements_ Character
   
   i Expected a definition here.
   
@@ -1347,16 +1347,16 @@ interface.graphql:43:1 parse ━━━━━━━━━━━━━━━━━
   > 43 │ inter Person
        │ ^^^^^^^^^^^^
     44 │ 
-    45 │ interface Person implemets Character
+    45 │ interface Person implements_ Character
   
 interface.graphql:45:18 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected a definition but instead found 'implemets Character'.
+  × Expected a definition but instead found 'implements_ Character'.
   
     43 │ inter Person
     44 │ 
-  > 45 │ interface Person implemets Character
-       │                  ^^^^^^^^^^^^^^^^^^^
+  > 45 │ interface Person implements_ Character
+       │                  ^^^^^^^^^^^^^^^^^^^^^
     46 │ 
     47 │ interface Person implements &
   
@@ -1364,8 +1364,8 @@ interface.graphql:45:18 parse ━━━━━━━━━━━━━━━━�
   
     43 │ inter Person
     44 │ 
-  > 45 │ interface Person implemets Character
-       │                  ^^^^^^^^^^^^^^^^^^^
+  > 45 │ interface Person implements_ Character
+       │                  ^^^^^^^^^^^^^^^^^^^^^
     46 │ 
     47 │ interface Person implements &
   

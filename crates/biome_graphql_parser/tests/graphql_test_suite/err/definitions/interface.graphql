@@ -42,7 +42,7 @@ interface Person implement Character @ {
 
 inter Person
 
-interface Person implemets Character
+interface Person implements_ Character
 
 interface Person implements &
 

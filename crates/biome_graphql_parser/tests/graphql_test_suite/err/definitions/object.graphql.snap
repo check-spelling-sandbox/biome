@@ -48,7 +48,7 @@ type Person implement Character @ {
 
 typ Person
 
-type Person implemets Character
+type Person implements_ Character
 
 type Person implements &
 
@@ -1338,7 +1338,7 @@ object.graphql:43:1 parse ━━━━━━━━━━━━━━━━━━
   > 43 │ typ Person
        │ ^^^^^^^^^^
     44 │ 
-    45 │ type Person implemets Character
+    45 │ type Person implements_ Character
   
   i Expected a definition here.
   
@@ -1347,16 +1347,16 @@ object.graphql:43:1 parse ━━━━━━━━━━━━━━━━━━
   > 43 │ typ Person
        │ ^^^^^^^^^^
     44 │ 
-    45 │ type Person implemets Character
+    45 │ type Person implements_ Character
   
 object.graphql:45:13 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  × Expected a definition but instead found 'implemets Character'.
+  × Expected a definition but instead found 'implements_ Character'.
   
     43 │ typ Person
     44 │ 
-  > 45 │ type Person implemets Character
-       │             ^^^^^^^^^^^^^^^^^^^
+  > 45 │ type Person implements_ Character
+       │             ^^^^^^^^^^^^^^^^^^^^^
     46 │ 
     47 │ type Person implements &
   
@@ -1364,8 +1364,8 @@ object.graphql:45:13 parse ━━━━━━━━━━━━━━━━━�
   
     43 │ typ Person
     44 │ 
-  > 45 │ type Person implemets Character
-       │             ^^^^^^^^^^^^^^^^^^^
+  > 45 │ type Person implements_ Character
+       │             ^^^^^^^^^^^^^^^^^^^^^
     46 │ 
     47 │ type Person implements &
   

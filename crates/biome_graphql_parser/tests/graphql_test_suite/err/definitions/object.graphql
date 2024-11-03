@@ -42,7 +42,7 @@ type Person implement Character @ {
 
 typ Person
 
-type Person implemets Character
+type Person implements_ Character
 
 type Person implements &
 
