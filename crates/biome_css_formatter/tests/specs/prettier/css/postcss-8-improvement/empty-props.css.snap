@@ -1,6 +1,6 @@
 ---
 source: crates/biome_formatter_test/src/snapshot_builder.rs
-info: css/postcss-8-improment/empty-props.css
+info: css/postcss-8-improvement/empty-props.css
 ---
 
 # Input
