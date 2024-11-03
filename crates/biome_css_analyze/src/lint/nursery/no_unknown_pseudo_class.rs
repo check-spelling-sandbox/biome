@@ -36,7 +36,7 @@ declare_lint_rule! {
     /// ```
     ///
     /// ```css,expect_diagnostic
-    /// a:hoverr {}
+    /// a:hover_ {}
     /// ```
     ///
     /// ### Valid
