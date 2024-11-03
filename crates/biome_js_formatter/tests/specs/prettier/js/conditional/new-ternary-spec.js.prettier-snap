@@ -86,7 +86,7 @@ const mostlyShort =
 // long conditional, short consequent/alternate, not chained - do indent after ?
 const longConditional =
   bifornCringerMoshedPerplexSawder === 2 / askTrovenaBeenaDependsRowans &&
-  glimseGlyphsHazardNoopsTieTie >=
+  glimpseGlyphsHazardNoopsTieTie >=
     averredBathersBoxroomBuggyNurl().anodyneCondosMalateOverateRetinol()
     ? "foo"
     : "bar";
@@ -95,7 +95,7 @@ const longConditional =
 // (break on short consequents iff in chained ternary and its conditional broke)
 const longConditionalChained =
   bifornCringerMoshedPerplexSawder === 2 / askTrovenaBeenaDependsRowans &&
-  glimseGlyphsHazardNoopsTieTie >=
+  glimpseGlyphsHazardNoopsTieTie >=
     averredBathersBoxroomBuggyNurl().anodyneCondosMalateOverateRetinol()
     ? "foo"
     : anotherCondition

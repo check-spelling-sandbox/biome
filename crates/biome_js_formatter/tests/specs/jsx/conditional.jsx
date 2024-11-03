@@ -1,7 +1,7 @@
 (bifornCringerMoshedPerplexSawder ? (
 	askTrovenaBeenaDependsRowans
 ) : (
-	glimseGlyphsHazardNoopsTieTie
+	glimpseGlyphsHazardNoopsTieTie
 )) ? null : (
 	<Element2>
 		<Sub />
@@ -14,7 +14,7 @@
 (bifornCringerMoshedPerplexSawder ? (
 	askTrovenaBeenaDependsRowans
 ) : (
-	glimseGlyphsHazardNoopsTieTie
+	glimpseGlyphsHazardNoopsTieTie
 )) ? undefined : (
 	<Element2>
 		<Sub />
@@ -26,7 +26,7 @@
 (bifornCringerMoshedPerplexSawder ? (
 	askTrovenaBeenaDependsRowans
 ) : (
-	glimseGlyphsHazardNoopsTieTie
+	glimpseGlyphsHazardNoopsTieTie
 )) ? x : (
 	<Element2>
 		<Sub />
@@ -39,7 +39,7 @@
 (bifornCringerMoshedPerplexSawder ? (
 	askTrovenaBeenaDependsRowans
 ) : (
-	glimseGlyphsHazardNoopsTieTie
+	glimpseGlyphsHazardNoopsTieTie
 )) ? a ? b : (
 	<Element2>
 		<Sub />

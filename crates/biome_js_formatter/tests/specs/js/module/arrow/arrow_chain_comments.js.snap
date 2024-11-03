@@ -5,7 +5,7 @@ info: js/module/arrow/arrow_chain_comments.js
 # Input
 
 ```js
-x = (bifornCringerMoshedPerplexSawder) => ((askTrovenaBeenaDependsRowans, glimseGlyphsHazardNoopsTieTie) => (f00) => {
+x = (bifornCringerMoshedPerplexSawder) => ((askTrovenaBeenaDependsRowans, glimpseGlyphsHazardNoopsTieTie) => (f00) => {
 		averredBathersBoxroomBuggyNurl();
 	} // BOOM
 )
@@ -43,7 +43,7 @@ Attribute Position: Auto
 ```js
 x =
 	(bifornCringerMoshedPerplexSawder) =>
-	(askTrovenaBeenaDependsRowans, glimseGlyphsHazardNoopsTieTie) =>
+	(askTrovenaBeenaDependsRowans, glimpseGlyphsHazardNoopsTieTie) =>
 	(f00) => {
 		averredBathersBoxroomBuggyNurl();
 	}; // BOOM
@@ -80,7 +80,7 @@ Attribute Position: Auto
 ```js
 x =
 	bifornCringerMoshedPerplexSawder =>
-	(askTrovenaBeenaDependsRowans, glimseGlyphsHazardNoopsTieTie) =>
+	(askTrovenaBeenaDependsRowans, glimpseGlyphsHazardNoopsTieTie) =>
 	f00 => {
 		averredBathersBoxroomBuggyNurl();
 	}; // BOOM

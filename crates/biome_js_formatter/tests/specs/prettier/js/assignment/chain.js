@@ -1,6 +1,6 @@
 let bifornCringerMoshedPerplexSawder=
 askTrovenaBeenaDependsRowans=
-glimseGlyphsHazardNoopsTieTie=
+glimpseGlyphsHazardNoopsTieTie=
 averredBathersBoxroomBuggyNurl=
 anodyneCondosMalateOverateRetinol=
 annularCooeedSplicesWalksWayWay=
@@ -8,7 +8,7 @@ kochabCooieGameOnOboleUnweave;
 
 bifornCringerMoshedPerplexSawder =
   askTrovenaBeenaDependsRowans =
-  glimseGlyphsHazardNoopsTieTie =
+  glimpseGlyphsHazardNoopsTieTie =
   x =
   averredBathersBoxroomBuggyNurl =
   anodyneCondosMal(sdsadsa,dasdas,asd(()=>sdf)).ateOverateRetinol =
@@ -17,7 +17,7 @@ bifornCringerMoshedPerplexSawder =
 
 bifornCringerMoshedPerplexSawder =
   askTrovenaBeenaDependsRowans =
-  glimseGlyphsHazardNoopsTieTie =
+  glimpseGlyphsHazardNoopsTieTie =
   x =
   averredBathersBoxroomBuggyNurl =
   anodyneCondosMal(sdsadsa,dasdas,asd(()=>sdf)).ateOverateRetinol =

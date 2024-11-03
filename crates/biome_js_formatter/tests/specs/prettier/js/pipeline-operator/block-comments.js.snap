@@ -10,7 +10,7 @@ bifornCringerMoshedPerplexSawder
 |> foo2 /* comment1 */
 |> foo3 /* comment2 */
 |> kochabCooieGameOnOboleUnweave
-|> glimseGlyphsHazardNoopsTieTie;
+|> glimpseGlyphsHazardNoopsTieTie;
 
 ```
 
@@ -26,12 +26,12 @@ bifornCringerMoshedPerplexSawder
 -  |> foo2 /* comment1 */
 -  |> foo3 /* comment2 */
 -  |> kochabCooieGameOnOboleUnweave
--  |> glimseGlyphsHazardNoopsTieTie;
+-  |> glimpseGlyphsHazardNoopsTieTie;
 +|> foo1
 +|> foo2 /* comment1 */
 +|> foo3 /* comment2 */
 +|> kochabCooieGameOnOboleUnweave
-+|> glimseGlyphsHazardNoopsTieTie;
++|> glimpseGlyphsHazardNoopsTieTie;
 ```
 
 # Output
@@ -42,7 +42,7 @@ bifornCringerMoshedPerplexSawder
 |> foo2 /* comment1 */
 |> foo3 /* comment2 */
 |> kochabCooieGameOnOboleUnweave
-|> glimseGlyphsHazardNoopsTieTie;
+|> glimpseGlyphsHazardNoopsTieTie;
 ```
 
 # Errors
@@ -81,7 +81,7 @@ block-comments.js:4:2 parse ━━━━━━━━━━━━━━━━━�
   > 4 │ |> foo3 /* comment2 */
       │  ^
     5 │ |> kochabCooieGameOnOboleUnweave
-    6 │ |> glimseGlyphsHazardNoopsTieTie;
+    6 │ |> glimpseGlyphsHazardNoopsTieTie;
   
   i This operator requires a left hand side value
   
@@ -93,7 +93,7 @@ block-comments.js:5:2 parse ━━━━━━━━━━━━━━━━━�
     4 │ |> foo3 /* comment2 */
   > 5 │ |> kochabCooieGameOnOboleUnweave
       │  ^
-    6 │ |> glimseGlyphsHazardNoopsTieTie;
+    6 │ |> glimpseGlyphsHazardNoopsTieTie;
     7 │ 
   
   i This operator requires a left hand side value
@@ -104,7 +104,7 @@ block-comments.js:6:2 parse ━━━━━━━━━━━━━━━━━�
   
     4 │ |> foo3 /* comment2 */
     5 │ |> kochabCooieGameOnOboleUnweave
-  > 6 │ |> glimseGlyphsHazardNoopsTieTie;
+  > 6 │ |> glimpseGlyphsHazardNoopsTieTie;
       │  ^
     7 │ 
   

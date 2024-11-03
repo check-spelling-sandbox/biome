@@ -4260,7 +4260,7 @@
  fn(
    bifornCringerMoshedPerplexSawder,
    askTrovenaBeenaDependsRowans,
-   glimseGlyphsHazardNoopsTieTie === averredBathersBoxroomBuggyNurl &&
+   glimpseGlyphsHazardNoopsTieTie === averredBathersBoxroomBuggyNurl &&
 -    anodyneCondosMalateOverateRetinol
 +  anodyneCondosMalateOverateRetinol
      ? annularCooeedSplicesWalksWayWay

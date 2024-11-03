@@ -1,7 +1,7 @@
 fn(
   bifornCringerMoshedPerplexSawder,
   askTrovenaBeenaDependsRowans,
-  glimseGlyphsHazardNoopsTieTie === averredBathersBoxroomBuggyNurl &&
+  glimpseGlyphsHazardNoopsTieTie === averredBathersBoxroomBuggyNurl &&
     anodyneCondosMalateOverateRetinol
       ? annularCooeedSplicesWalksWayWay
       : kochabCooieGameOnOboleUnweave

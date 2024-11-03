@@ -28,13 +28,13 @@ function foo() {
 
 bifornCringerMoshedPerplexSawder =
   askTrovenaBeenaDependsRowans +
-  ((glimseGlyphsHazardNoopsTieTie === 0
+  ((glimpseGlyphsHazardNoopsTieTie === 0
     ? averredBathersBoxroomBuggyNurl
     : anodyneCondosMalateOverateRetinol) satisfies AnnularCooeedSplicesWalksWayWay);
 
 bifornCringerMoshedPerplexSawder =
   askTrovenaBeenaDependsRowans +
-  ((glimseGlyphsHazardNoopsTieTie === 0 &&
+  ((glimpseGlyphsHazardNoopsTieTie === 0 &&
   kochabCooieGameOnOboleUnweave === Math.PI
     ? averredBathersBoxroomBuggyNurl
     : anodyneCondosMalateOverateRetinol) satisfies AnnularCooeedSplicesWalksWayWay);

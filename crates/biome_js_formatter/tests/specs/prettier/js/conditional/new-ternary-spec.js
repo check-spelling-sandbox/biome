@@ -92,7 +92,7 @@ const mostlyShort =
 const longConditional =
   (
     bifornCringerMoshedPerplexSawder === 2 / askTrovenaBeenaDependsRowans &&
-    glimseGlyphsHazardNoopsTieTie >=
+    glimpseGlyphsHazardNoopsTieTie >=
       averredBathersBoxroomBuggyNurl().anodyneCondosMalateOverateRetinol()
   ) ?
     "foo"
@@ -103,7 +103,7 @@ const longConditional =
 const longConditionalChained =
   (
     bifornCringerMoshedPerplexSawder === 2 / askTrovenaBeenaDependsRowans &&
-    glimseGlyphsHazardNoopsTieTie >=
+    glimpseGlyphsHazardNoopsTieTie >=
       averredBathersBoxroomBuggyNurl().anodyneCondosMalateOverateRetinol()
   ) ?
     "foo"

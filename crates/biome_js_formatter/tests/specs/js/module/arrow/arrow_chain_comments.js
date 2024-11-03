@@ -1,4 +1,4 @@
-x = (bifornCringerMoshedPerplexSawder) => ((askTrovenaBeenaDependsRowans, glimseGlyphsHazardNoopsTieTie) => (f00) => {
+x = (bifornCringerMoshedPerplexSawder) => ((askTrovenaBeenaDependsRowans, glimpseGlyphsHazardNoopsTieTie) => (f00) => {
 		averredBathersBoxroomBuggyNurl();
 	} // BOOM
 )

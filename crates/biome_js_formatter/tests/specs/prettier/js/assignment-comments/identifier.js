@@ -2,6 +2,6 @@ const kochabCooieGameOnOboleUnweave = // ???
       annularCooeedSplicesWalksWayWay;
 
 const bifornCringerMoshedPerplexSawder = // !!!
-  glimseGlyphsHazardNoopsTieTie +
+  glimpseGlyphsHazardNoopsTieTie +
   averredBathersBoxroomBuggyNurl -
   anodyneCondosMalateOverateRetinol;

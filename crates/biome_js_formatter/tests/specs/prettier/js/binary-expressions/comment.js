@@ -24,7 +24,7 @@ a ||
 
 var a = x(abifornCringerMoshedPerplexSawder
 + kochabCooieGameOnOboleUnweave // f
-+ glimseGlyphsHazardNoopsTieTie+bifornCringerMoshedPerplexSawder);
++ glimpseGlyphsHazardNoopsTieTie+bifornCringerMoshedPerplexSawder);
 
 foo[
   a +

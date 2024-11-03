@@ -1,11 +1,11 @@
-bifornCringer = askTrovenaBeenaDepends = glimseGlyphs = (
+bifornCringer = askTrovenaBeenaDepends = glimpseGlyphs = (
   argumentOne,
   argumentTwo,
 ) => restOfTheArguments12345678 => {
   return "baz";
 };
 
-bifornCringer = askTrovenaBeenaDepends = glimseGlyphs = (
+bifornCringer = askTrovenaBeenaDepends = glimpseGlyphs = (
   argumentOne,
   argumentTwo,
   argumentThree
@@ -13,7 +13,7 @@ bifornCringer = askTrovenaBeenaDepends = glimseGlyphs = (
   return "baz";
 };
 
-bifornCringer = askTrovenaBeenaDepends = glimseGlyphs = (
+bifornCringer = askTrovenaBeenaDepends = glimpseGlyphs = (
   argumentOne,
   argumentTwo,
   argumentThree
@@ -23,14 +23,14 @@ bifornCringer = askTrovenaBeenaDepends = glimseGlyphs = (
 
 const bifornCringer1 =
   askTrovenaBeenaDepends =
-  glimseGlyphs =
+  glimpseGlyphs =
     (argumentOne, argumentTwo) => (restOfTheArguments12345678) => {
       return "baz";
     };
 
 const bifornCringer2 =
   askTrovenaBeenaDepends =
-  glimseGlyphs =
+  glimpseGlyphs =
     (argumentOne, argumentTwo, argumentThree) =>
     (restOfTheArguments12345678) => {
       return "baz";
@@ -38,7 +38,7 @@ const bifornCringer2 =
 
 const bifornCringer3 =
   askTrovenaBeenaDepends =
-  glimseGlyphs =
+  glimpseGlyphs =
     (argumentOne, argumentTwo, argumentThree) => {
       return "baz";
     };

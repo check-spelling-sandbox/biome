@@ -1,5 +1,5 @@
 const bifornCringerMoshedPerplexSawder =
-  askTrovenaBeenaDependsRowans as glimseGlyphsHazardNoopsTieTie;
+  askTrovenaBeenaDependsRowans as glimpseGlyphsHazardNoopsTieTie;
 
 averredBathersBoxroomBuggyNurl.anodyneCondosMalateOverateRetinol =
   annularCooeedSplicesWalksWayWay as kochabCooieGameOnOboleUnweave;

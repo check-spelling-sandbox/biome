@@ -17,7 +17,7 @@ a.b(
 // signatures indent to the same level, not a second level in.
 // Block body statements also indent an additional level from the last
 // signature.
-x = (bifornCringerMoshedPerplexSawder) => ((askTrovenaBeenaDependsRowans, glimseGlyphsHazardNoopsTieTie) => (f00) => {
+x = (bifornCringerMoshedPerplexSawder) => ((askTrovenaBeenaDependsRowans, glimpseGlyphsHazardNoopsTieTie) => (f00) => {
   averredBathersBoxroomBuggyNurl();
 } // BOOM
 )
@@ -26,14 +26,14 @@ x = (bifornCringerMoshedPerplexSawder) => ((askTrovenaBeenaDependsRowans, glimse
 // last assignment, then all subsequent signatures are at the same level
 const bifornCringer1 =
   askTrovenaBeenaDepends =
-  glimseGlyphs =
+  glimpseGlyphs =
     (argumentOne, argumentTwo) => (restOfTheArguments12345678) => {
       return "baz";
     };
 
 const bifornCringer2 =
     askTrovenaBeenaDepends =
-    glimseGlyphs =
+    glimpseGlyphs =
       (argumentOne, argumentTwo) => (restOfTheArguments12345678) => (yetAnotherArgumentPastLineWidth) => {
         return "baz";
       };

@@ -6,7 +6,7 @@ $var = ($number % 10 >= 2 && ($number % 100 < 10 || $number % 100 >= 20)
 
 const value = (bifornCringerMoshedPerplexSawder
 ? askTrovenaBeenaDependsRowans
-: glimseGlyphsHazardNoopsTieTie)
+: glimpseGlyphsHazardNoopsTieTie)
   ? true
     ? true
     : false
@@ -17,7 +17,7 @@ const value = (bifornCringerMoshedPerplexSawder
 (bifornCringerMoshedPerplexSawder ? (
   askTrovenaBeenaDependsRowans
 ) : (
-  glimseGlyphsHazardNoopsTieTie
+  glimpseGlyphsHazardNoopsTieTie
 )) ? (
   <Element>
     <Sub />

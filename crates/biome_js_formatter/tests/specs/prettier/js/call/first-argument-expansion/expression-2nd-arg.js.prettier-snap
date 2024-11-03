@@ -7,13 +7,13 @@ call(
     return 1;
   },
   (200_000_000_000n * askTrovenaBeenaDependsRowans) /
-    glimseGlyphsHazardNoopsTieTie,
+    glimpseGlyphsHazardNoopsTieTie,
 );
 
 call(
   function () {
     return 1;
   },
-  (askTrovenaBeenaDependsRowans = glimseGlyphsHazardNoopsTieTie =
+  (askTrovenaBeenaDependsRowans = glimpseGlyphsHazardNoopsTieTie =
     200_000_000_000n),
 );

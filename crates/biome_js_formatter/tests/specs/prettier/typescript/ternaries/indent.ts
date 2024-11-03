@@ -8,7 +8,7 @@ foo = (callNode.parent?.type === AST_NODE_TYPES.ChainExpression
   : callNode.parent
 ).TSESTree!.BinaryExpression;
 
-bifornCringerMoshedPerplexSawder = (glimseGlyphsHazardNoopsTieTie === 0 &&
+bifornCringerMoshedPerplexSawder = (glimpseGlyphsHazardNoopsTieTie === 0 &&
 kochabCooieGameOnOboleUnweave === Math.PI
   ? averredBathersBoxroomBuggyNurl
   : anodyneCondosMalateOverateRetinol
@@ -26,7 +26,7 @@ foo = (callNode.parent?.type === AST_NODE_TYPES.ChainExpression
   : callNode.parent
 ).TSESTree!.BinaryExpression!;
 
-bifornCringerMoshedPerplexSawder = (glimseGlyphsHazardNoopsTieTie === 0 &&
+bifornCringerMoshedPerplexSawder = (glimpseGlyphsHazardNoopsTieTie === 0 &&
 kochabCooieGameOnOboleUnweave === Math.PI
   ? averredBathersBoxroomBuggyNurl
   : anodyneCondosMalateOverateRetinol
@@ -36,7 +36,7 @@ kochabCooieGameOnOboleUnweave === Math.PI
 
 bifornCringerMoshedPerplexSawder =
   askTrovenaBeenaDependsRowans +
-  (glimseGlyphsHazardNoopsTieTie === 0
+  (glimpseGlyphsHazardNoopsTieTie === 0
     ? averredBathersBoxroomBuggyNurl
     : anodyneCondosMalateOverateRetinol
   ).Foo!.foo;
