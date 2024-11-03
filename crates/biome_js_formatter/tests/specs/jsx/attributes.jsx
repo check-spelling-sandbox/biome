@@ -41,7 +41,7 @@
 
 					let a = <test aVeryLongAttributeName={"WithAVeryLongValuethat exceeds the line width, what happens with ithis"} />;
 
-					<test {...WithAVeryLongFunctionthat_exceeds_the_line_width_what_happens_with_ithis()} />;
+					<test {...WithAVeryLongFunctionThat_exceeds_the_line_width_what_happens_with_ithis()} />;
 					<div {...["Chungking Express", "Fallen Angels", "In the Mood for Love", "Days of Living Wild", "Happy Together"]}/>;
 
 
