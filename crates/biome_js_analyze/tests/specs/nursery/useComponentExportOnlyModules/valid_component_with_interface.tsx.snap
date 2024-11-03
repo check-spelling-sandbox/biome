@@ -6,7 +6,7 @@ expression: valid_component_with_interface.tsx
 # Input
 ```tsx
 export const SampleComponent = () => <></>
-export interface SampleInterfafce {
+export interface SampleInterface {
   hoge: number
 }
 

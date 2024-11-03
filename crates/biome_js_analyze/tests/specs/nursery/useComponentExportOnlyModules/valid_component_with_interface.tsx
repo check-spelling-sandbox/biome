@@ -1,4 +1,4 @@
 export const SampleComponent = () => <></>
-export interface SampleInterfafce {
+export interface SampleInterface {
   hoge: number
 }

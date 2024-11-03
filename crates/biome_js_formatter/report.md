@@ -8763,7 +8763,7 @@
 **Prettier Similarity**: 100.00%
 
 
-### typescript/instantiation-expression/inferface-asi.ts
+### typescript/instantiation-expression/interface-asi.ts
 
 **Prettier Similarity**: 100.00%
 
