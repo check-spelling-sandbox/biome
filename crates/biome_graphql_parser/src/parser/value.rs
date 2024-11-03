@@ -1,4 +1,4 @@
-/// Parse all inpul value
+/// Parse all input value
 /// https://spec.graphql.org/October2021/#sec-Input-Values
 use crate::parser::GraphqlParser;
 use biome_graphql_syntax::{
