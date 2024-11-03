@@ -26,7 +26,7 @@ function doSmth()     {
 
     console.log
     (%
-        GetFunctioName(f)
+        GetFunctionName(f)
         );
 }
 
@@ -59,10 +59,10 @@ function doSmth()     {
 +                "wasm"
 +            );
  
--  console.log(%GetFunctioName(f));
+-  console.log(%GetFunctionName(f));
 +  console.log
 +    (%
-+        GetFunctioName(f)
++        GetFunctionName(f)
 +        );
  }
 ```
@@ -89,7 +89,7 @@ function printFunc(f) {
 
   console.log
     (%
-        GetFunctioName(f)
+        GetFunctionName(f)
         );
 }
 ```
@@ -155,7 +155,7 @@ intrinsic_call.js:21:6 parse ━━━━━━━━━━━━━━━━━
     20 │     console.log
   > 21 │     (%
        │      ^
-    22 │         GetFunctioName(f)
+    22 │         GetFunctionName(f)
     23 │         );
   
   i This operator requires a left hand side value
