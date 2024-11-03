@@ -1550,7 +1550,7 @@ pub enum Kind {
     EnumMember,
     /// TypeScript namespaces, import and export namespaces
     NamespaceLike,
-    /// TypeScript mamespaces
+    /// TypeScript namespaces
     Namespace,
     ImportNamespace,
     ExportNamespace,
