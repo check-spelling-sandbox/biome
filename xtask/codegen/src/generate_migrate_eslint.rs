@@ -17,10 +17,10 @@ pub(crate) fn generate_migrate_eslint(mode: Mode) -> Result<()> {
         let name = rule_metadata.name;
         let name_ident = format_ident!("{}", Case::Snake.convert(name));
         let group_ident = format_ident!("{group_name}");
-        let is_inspuired = rule_metadata
+        let is_inspired = rule_metadata
             .source_kind
             .map_or(false, |source_kind| source_kind.is_inspired());
-        let check_inspired = if is_inspuired {
+        let check_inspired = if is_inspired {
             quote! {
                 if !options.include_inspired {
                     results.has_inspired_rules = true;
