@@ -259,7 +259,7 @@ pub(super) trait IndentStack {
     }
 }
 
-/// Indent stack used for storing indetion history when printing the [FormatElement]s
+/// Indent stack used for storing indentation history when printing the [FormatElement]s
 #[derive(Debug, Clone)]
 pub(super) struct PrintIndentStack {
     indentions: Vec<Indention>,
