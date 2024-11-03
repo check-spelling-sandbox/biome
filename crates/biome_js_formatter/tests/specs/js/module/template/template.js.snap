@@ -68,7 +68,7 @@ message = \`whereas this messsage has a linebreak in the interpolation \${
 } <- like this`;
 
 // https://github.com/biomejs/biome/issues/3766
-const issus_3766 = `Lectures: ${doneCount}/${totalCount} | Mins: ${(doneSecs / 60).toFixed(
+const issue_3766 = `Lectures: ${doneCount}/${totalCount} | Mins: ${(doneSecs / 60).toFixed(
     2,
   )}/${(totalSecs / 60).toFixed(
     2,
@@ -182,7 +182,7 @@ message = \`whereas this messsage has a linebreak in the interpolation \${
 } <- like this`;
 
 // https://github.com/biomejs/biome/issues/3766
-const issus_3766 = `Lectures: ${doneCount}/${totalCount} | Mins: ${(
+const issue_3766 = `Lectures: ${doneCount}/${totalCount} | Mins: ${(
 	doneSecs / 60
 ).toFixed(2)}/${(totalSecs / 60).toFixed(2)}| Hours: ${(
 	doneSecs / 3600
