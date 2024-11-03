@@ -36,7 +36,7 @@ impl Quote {
 ///
 /// The function allocates a new string only if at least one change is performed.
 ///
-/// In the followinf example `"` is escaped, `\'` and `\l` are unescaped, and the newline is normalized.
+/// In the following example `"` is escaped, `\'` and `\l` are unescaped, and the newline is normalized.
 ///
 /// ```
 /// use biome_formatter::token::string::{normalize_string, Quote};
