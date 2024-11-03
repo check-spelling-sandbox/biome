@@ -43,9 +43,9 @@ type TypeWithTypleInsideLong = [
     AAAAAAAAAAAAAAAAA | [AAAAAAAAAAAAAAAAA, BBBBBBBBBBBB, CCCCCCCCCCCCC] | CCCCCCCCCCCCCCCCCCCC,
   ];
 
-type TypeWithUnionInsideIntersactionAddParenthesesShort = B & (C | A) & D;
+type TypeWithUnionInsideIntersectionAddParenthesesShort = B & (C | A) & D;
 
-type TypeWithUnionInsideIntersactionAddParenthesesLong = BBBBBBBBBBBB & (CCCCCCCCCCCCC | AAAAAAAAAAAAAAAAA) & DDDDDDDDDDDDDDDDDDDDDDDDDDDDD;
+type TypeWithUnionInsideIntersectionAddParenthesesLong = BBBBBBBBBBBB & (CCCCCCCCCCCCC | AAAAAAAAAAAAAAAAA) & DDDDDDDDDDDDDDDDDDDDDDDDDDDDD;
 
 const fooo: SomeThingWithShortMappedType<{
       [P in A | B | C | string]: number;
