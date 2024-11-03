@@ -65,7 +65,7 @@ interface Person {
 
 				String): String
 
-				"filder by age" age:
+				"filter by age" age:
 
 			Int @deprecated
 

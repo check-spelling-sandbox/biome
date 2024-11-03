@@ -60,7 +60,7 @@ type Person implements Character & Character1 & @deprecated
 
 type Person {
   name(start_with:): String
-  "filder by age age: Int @deprecated
+  "filter by age age: Int @deprecated
   picture(: Int = 0): Url
   height("filter by height" greater_than: @deprecated): Int
   weight("filter by weight" greater_than: Int = @deprecated): Int
@@ -519,7 +519,7 @@ GraphqlRoot {
                                 },
                                 GraphqlBogus {
                                     items: [
-                                        ERROR_TOKEN@578..616 "\"filder by age age: Int @deprecated" [Newline("\n"), Whitespace("  ")] [],
+                                        ERROR_TOKEN@578..616 "\"filter by age age: Int @deprecated" [Newline("\n"), Whitespace("  ")] [],
                                     ],
                                 },
                                 GraphqlFieldDefinition {
@@ -988,7 +988,7 @@ GraphqlRoot {
               0: IDENT@572..578 "String" [] []
             5: GRAPHQL_DIRECTIVE_LIST@578..578
           1: GRAPHQL_BOGUS@578..616
-            0: ERROR_TOKEN@578..616 "\"filder by age age: Int @deprecated" [Newline("\n"), Whitespace("  ")] []
+            0: ERROR_TOKEN@578..616 "\"filter by age age: Int @deprecated" [Newline("\n"), Whitespace("  ")] []
           2: GRAPHQL_FIELD_DEFINITION@616..642
             0: (empty)
             1: GRAPHQL_LITERAL_NAME@616..626
@@ -1429,7 +1429,7 @@ object.graphql:56:19 parse ━━━━━━━━━━━━━━━━━�
     55 │ type Person {
   > 56 │   name(start_with:): String
        │                   ^
-    57 │   "filder by age age: Int @deprecated
+    57 │   "filter by age age: Int @deprecated
     58 │   picture(: Int = 0): Url
   
   i Expected a type here.
@@ -1437,7 +1437,7 @@ object.graphql:56:19 parse ━━━━━━━━━━━━━━━━━�
     55 │ type Person {
   > 56 │   name(start_with:): String
        │                   ^
-    57 │   "filder by age age: Int @deprecated
+    57 │   "filter by age age: Int @deprecated
     58 │   picture(: Int = 0): Url
   
 object.graphql:57:3 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1446,7 +1446,7 @@ object.graphql:57:3 parse ━━━━━━━━━━━━━━━━━━
   
     55 │ type Person {
     56 │   name(start_with:): String
-  > 57 │   "filder by age age: Int @deprecated
+  > 57 │   "filter by age age: Int @deprecated
        │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     58 │   picture(: Int = 0): Url
     59 │   height("filter by height" greater_than: @deprecated): Int
@@ -1456,7 +1456,7 @@ object.graphql:58:11 parse ━━━━━━━━━━━━━━━━━�
   × Expected a name but instead found ':'.
   
     56 │   name(start_with:): String
-    57 │   "filder by age age: Int @deprecated
+    57 │   "filter by age age: Int @deprecated
   > 58 │   picture(: Int = 0): Url
        │           ^
     59 │   height("filter by height" greater_than: @deprecated): Int
@@ -1465,7 +1465,7 @@ object.graphql:58:11 parse ━━━━━━━━━━━━━━━━━�
   i Expected a name here.
   
     56 │   name(start_with:): String
-    57 │   "filder by age age: Int @deprecated
+    57 │   "filter by age age: Int @deprecated
   > 58 │   picture(: Int = 0): Url
        │           ^
     59 │   height("filter by height" greater_than: @deprecated): Int
@@ -1475,7 +1475,7 @@ object.graphql:59:43 parse ━━━━━━━━━━━━━━━━━�
 
   × Expected a type but instead found '@'.
   
-    57 │   "filder by age age: Int @deprecated
+    57 │   "filter by age age: Int @deprecated
     58 │   picture(: Int = 0): Url
   > 59 │   height("filter by height" greater_than: @deprecated): Int
        │                                           ^
@@ -1484,7 +1484,7 @@ object.graphql:59:43 parse ━━━━━━━━━━━━━━━━━�
   
   i Expected a type here.
   
-    57 │   "filder by age age: Int @deprecated
+    57 │   "filter by age age: Int @deprecated
     58 │   picture(: Int = 0): Url
   > 59 │   height("filter by height" greater_than: @deprecated): Int
        │                                           ^

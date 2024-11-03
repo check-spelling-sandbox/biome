@@ -42,7 +42,7 @@ type Person implements Character & Character1 @deprecated
 "This is a person"
 type Person {
   name(start_with: String): String
-  "filder by age" age: Int @deprecated
+  "filter by age" age: Int @deprecated
   picture(size: Int = 0): Url
   height("filter by height" greater_than: Int @deprecated): Int
   weight("filter by weight" greater_than: Int = 0 @deprecated): Int
@@ -428,7 +428,7 @@ GraphqlRoot {
                     GraphqlFieldDefinition {
                         description: GraphqlDescription {
                             graphql_string_value: GraphqlStringValue {
-                                graphql_string_literal_token: GRAPHQL_STRING_LITERAL@560..579 "\"filder by age\"" [Newline("\n"), Whitespace("  ")] [Whitespace(" ")],
+                                graphql_string_literal_token: GRAPHQL_STRING_LITERAL@560..579 "\"filter by age\"" [Newline("\n"), Whitespace("  ")] [Whitespace(" ")],
                             },
                         },
                         name: GraphqlLiteralName {
@@ -935,7 +935,7 @@ GraphqlRoot {
           1: GRAPHQL_FIELD_DEFINITION@560..599
             0: GRAPHQL_DESCRIPTION@560..579
               0: GRAPHQL_STRING_VALUE@560..579
-                0: GRAPHQL_STRING_LITERAL@560..579 "\"filder by age\"" [Newline("\n"), Whitespace("  ")] [Whitespace(" ")]
+                0: GRAPHQL_STRING_LITERAL@560..579 "\"filter by age\"" [Newline("\n"), Whitespace("  ")] [Whitespace(" ")]
             1: GRAPHQL_LITERAL_NAME@579..582
               0: IDENT@579..582 "age" [] []
             2: (empty)

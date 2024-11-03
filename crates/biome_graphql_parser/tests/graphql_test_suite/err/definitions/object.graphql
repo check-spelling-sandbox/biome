@@ -54,7 +54,7 @@ type Person implements Character & Character1 & @deprecated
 
 type Person {
   name(start_with:): String
-  "filder by age age: Int @deprecated
+  "filter by age age: Int @deprecated
   picture(: Int = 0): Url
   height("filter by height" greater_than: @deprecated): Int
   weight("filter by weight" greater_than: Int = @deprecated): Int
