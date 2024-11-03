@@ -1030,7 +1030,7 @@ fn parse_property_class_member_body(
 
     if let Present(initializer) = &initializer_syntax {
         if modifiers.has(ModifierKind::Abstract) {
-            // test_err ts ts_abstract_property_cannot_have_initiliazers
+            // test_err ts ts_abstract_property_cannot_have_initializers
             // abstract class A {
             //     abstract name: string = "";
             // }

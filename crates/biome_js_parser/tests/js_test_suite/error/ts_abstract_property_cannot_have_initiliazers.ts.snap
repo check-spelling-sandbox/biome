@@ -107,7 +107,7 @@ JsModule {
 ## Diagnostics
 
 ```
-ts_abstract_property_cannot_have_initiliazers.ts:2:27 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ts_abstract_property_cannot_have_initializers.ts:2:27 parse ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   × Property cannot have an initializer because it is marked abstract.
   
