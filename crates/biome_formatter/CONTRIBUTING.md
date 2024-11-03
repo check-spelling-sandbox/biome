@@ -345,7 +345,7 @@ where
 </details>
 
 
-Now that everything is wired, you just needs to expose a public method that does the actual formattings:
+Now that everything is wired, you just needs to expose a public method that does the actual formatting:
 
 ```rust
 pub fn format_node(
