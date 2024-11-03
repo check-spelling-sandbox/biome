@@ -24,7 +24,7 @@ declare_lint_rule! {
     /// The more complexity a function contains, the harder it is to understand
     /// later on.
     ///
-    /// Reducing complexity helps to make code more maintenable, both by making
+    /// Reducing complexity helps to make code more maintainable, both by making
     /// it easier to understand as well as by reducing chances of accidental
     /// side-effects when making changes.
     ///
