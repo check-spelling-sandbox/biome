@@ -1986,7 +1986,7 @@ impl JsonSchema for Formats {
     }
 }
 
-/// trim underscores and dollar signs from `name` and returns the lengtj of the trimmed prefix.
+/// trim underscores and dollar signs from `name` and returns the length of the trimmed prefix.
 fn trim_underscore_dollar(name: &str) -> (usize, &str) {
     let prefix_len = name
         .bytes()
