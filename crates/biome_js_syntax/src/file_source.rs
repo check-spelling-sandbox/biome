@@ -368,7 +368,7 @@ impl TryFrom<&Path> for JsFileSource {
         let filename = path
             .file_name()
             // We assume the file extensions are case-insensitive.
-            // Thus, we normalize the filrname to lowercase.
+            // Thus, we normalize the filename to lowercase.
             .map(|filename| filename.as_encoded_bytes().to_ascii_lowercase_cow());
 
         // We assume the file extensions are case-insensitive
