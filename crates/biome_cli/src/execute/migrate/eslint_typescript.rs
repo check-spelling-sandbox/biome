@@ -82,7 +82,7 @@ pub(crate) struct NamingConventionOptions(Vec<NamingConventionSelection>);
 impl NamingConventionOptions {
     pub(crate) fn new(overrides: impl IntoIterator<Item = NamingConventionSelection>) -> Self {
         let mut inner: Vec<_> = overrides.into_iter().collect();
-        // Order of the least general selection to the most geenral selection
+        // Order of the least general selection to the most general selection
         inner.sort_by(|a, b| a.precedence(b));
         Self(inner)
     }
