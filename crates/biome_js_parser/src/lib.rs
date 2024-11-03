@@ -1,7 +1,7 @@
 //! Extremely fast, lossless, and error tolerant JavaScript Parser.
 //!
 //! The parser uses an abstraction over non-whitespace tokens.
-//! This allows us to losslessly or lossly parse code without requiring explicit handling of whitespace.
+//! This allows us to losslessly or lossily parse code without requiring explicit handling of whitespace.
 //! The parser yields events, not an AST, the events are resolved into untyped syntax nodes, which can then
 //! be casted into a typed AST.
 //!
