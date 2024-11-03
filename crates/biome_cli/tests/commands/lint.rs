@@ -3371,7 +3371,7 @@ fn lint_only_rule_doesnt_exist() {
         Args::from(
             [
                 ("lint"),
-                "--only=suspicious/inexistant",
+                "--only=suspicious/nonexistent",
                 file_path.as_os_str().to_str().unwrap(),
             ]
             .as_slice(),
