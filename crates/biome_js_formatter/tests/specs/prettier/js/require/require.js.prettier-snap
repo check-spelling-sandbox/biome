@@ -24,7 +24,7 @@ const {
   eleven1,
 } = require("./my-utils");
 
-const MyReallyExtrememlyLongModuleName = require("MyReallyExtrememlyLongModuleName");
+const MyReallyExtremelyLongModuleName = require("MyReallyExtremelyLongModuleName");
 
 const plugin = require(
   global.STANDALONE
