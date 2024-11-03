@@ -566,7 +566,7 @@ our [guidelines for writing a good changelog entry](https://github.com/biomejs/b
 
 - [useSemanticElements](https://biomejs.dev/linter/rules/use-semantic-elements/) now ignores `alert` and `alertdialog` roles ([#3858](https://github.com/biomejs/biome/issues/3858)). Contributed by @Conaclos
 
-- [noUselessFragments](https://biomejs.dev/linter/rules/no-useless-fragments/) don't create invaild JSX code when Fragments children contains JSX Expression and in a LogicalExpression. Contributed by @fireairforce
+- [noUselessFragments](https://biomejs.dev/linter/rules/no-useless-fragments/) don't create invalid JSX code when Fragments children contains JSX Expression and in a LogicalExpression. Contributed by @fireairforce
 
 ### Parser
 
