@@ -632,7 +632,7 @@ impl<'src> GraphqlLexer<'src> {
                             r"\n",
                             r"\r",
                             r"\t",
-                            r"\uXXXX where X is hexedecimal number",
+                            r"\uXXXX where X is hexadecimal number",
                         ],
                     );
                     (state, Some(diagnostic))

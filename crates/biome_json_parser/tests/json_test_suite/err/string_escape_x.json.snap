@@ -54,6 +54,6 @@ string_escape_x.json:1:3 parse ━━━━━━━━━━━━━━━━�
   > 1 │ ["\x00"]
       │   ^^
   
-  i Valid escape sequences are: `\\`, `\/`, `/"`, `\b\`, `\f`, `\n`, `\r`, `\t` or any unicode escape sequence `\uXXXX` where X is hexedecimal number. 
+  i Valid escape sequences are: `\\`, `\/`, `/"`, `\b\`, `\f`, `\n`, `\r`, `\t` or any unicode escape sequence `\uXXXX` where X is hexadecimal number. 
   
 ```
