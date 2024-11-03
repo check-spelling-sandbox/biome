@@ -15,7 +15,7 @@ export interface BiomePath {
 	 */
 	path: string;
 	/**
-	 * Whether this path (usually a file) was fixed as a result of a format/lint/check command with the `--write` filag.
+	 * Whether this path (usually a file) was fixed as a result of a format/lint/check command with the `--write` flag.
 	 */
 	was_written: boolean;
 }

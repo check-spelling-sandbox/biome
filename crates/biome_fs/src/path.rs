@@ -99,7 +99,7 @@ pub struct BiomePath {
     path: PathBuf,
     /// Determines the kind of the file inside Biome. Some files are considered as configuration files, others as manifest files, and others as files to handle
     kind: FileKinds,
-    /// Whether this path (usually a file) was fixed as a result of a format/lint/check command with the `--write` filag.
+    /// Whether this path (usually a file) was fixed as a result of a format/lint/check command with the `--write` flag.
     was_written: bool,
 }
 
