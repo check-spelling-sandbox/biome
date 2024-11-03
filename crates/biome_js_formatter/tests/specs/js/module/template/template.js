@@ -55,8 +55,8 @@ and this other one: ${this(long.placeholder.text.goes.here.so.we.get.a.linebreak
 which already had a linebreak so can be broken up
 `;
 
-message = `this is a long messsage a simple interpolation without a linebreak \${foo} <- like this\`;
-message = \`whereas this messsage has a linebreak in the interpolation \${
+message = `this is a long message a simple interpolation without a linebreak \${foo} <- like this\`;
+message = \`whereas this message has a linebreak in the interpolation \${
   foo
 } <- like this`;
 
